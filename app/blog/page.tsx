@@ -65,7 +65,7 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Recent Articles */}
+      {/* Recent Articles 
       <section className="py-16 bg-muted">
         <div className="container px-4">
           <div className="text-center mb-12">
@@ -200,9 +200,9 @@ export default function BlogPage() {
             </Button>
           </div>
         </div>
-      </section>
+      </section>*/}
 
-      {/* Categories */}
+      {/* Categories 
       <section className="py-16">
         <div className="container px-4">
           <div className="text-center mb-12">
@@ -270,7 +270,7 @@ export default function BlogPage() {
             </Link>
           </div>
         </div>
-      </section>
+      </section>*/}
 
       {/* Newsletter */}
       <section className="py-16 bg-muted">

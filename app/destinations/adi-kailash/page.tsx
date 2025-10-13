@@ -27,7 +27,7 @@ export default function AdiKailashPage() {
     bestSeason: "May to October",
     startingPoint: "Kathgodam",
     endingPoint: "Kathgodam",
-    price: 25999,
+    price: 24999,
     includes: [
       "Accommodation (hotels & Homestays)",
       "All meals during the trek",
@@ -110,24 +110,7 @@ export default function AdiKailashPage() {
         answer:
           "Yes, Om Parvat is famous for the natural formation of the sacred 'Om' symbol on its face, visible when covered with snow. The best time to see this is during the summer months when the snow patterns are most distinct.",
       },
-    ],
-    upcomingDepartures: [
-      {
-        date: "May 14, 2025",
-        spotsLeft: 6,
-        price: 25999,
-      },
-      {
-        date: "May 23, 2025",
-        spotsLeft: 8,
-        price: 28999,
-      },
-      {
-        date: "June 5, 2025",
-        spotsLeft: 10,
-        price: 28999,
-      },
-    ],
+    ]
   }
 
   return (
@@ -277,7 +260,7 @@ export default function AdiKailashPage() {
               <Card className="sticky top-24">
                 <CardHeader>
                   <CardTitle>Book Your Yatra</CardTitle>
-                  <CardDescription>Choose from upcoming departures</CardDescription>
+                  <CardDescription>Contact us for available dates</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center justify-between">
@@ -290,28 +273,9 @@ export default function AdiKailashPage() {
                     </Badge>
                   </div>
 
-                  <div className="space-y-3">
-                    {destination.upcomingDepartures.map((departure, index) => (
-                      <div key={index} className="flex items-center justify-between p-3 border rounded-lg">
-                        <div>
-                          <div className="flex items-center gap-2">
-                            <Calendar className="h-4 w-4 text-primary" />
-                            <span className="font-medium">{departure.date}</span>
-                          </div>
-                          <p className="text-sm text-muted-foreground">{departure.spotsLeft} spots left</p>
-                        </div>
-                        <Button asChild size="sm">
-                          <Link href="/book/adi-kailash">
-                            Book Now
-                          </Link>
-                        </Button>
-                      </div>
-                    ))}
-                  </div>
-
                   <div className="pt-4">
                     <Button asChild className="w-full">
-                      <Link href="/contact">Request Custom Date</Link>
+                      <Link href="/contact">Contact for Dates</Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -443,118 +407,119 @@ export default function AdiKailashPage() {
           </div>
         </div>
       </section>
-  {/* Similar Destinations */}
-<section className="py-16">
-  <div className="container px-4">
-    <div className="text-center mb-12">
-      <h2 className="text-3xl font-bold mb-4">More Sacred Journeys</h2>
-      <p className="text-muted-foreground max-w-2xl mx-auto">
-        Explore other divine pilgrimages in the Himalayas
-      </p>
-    </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <Card className="overflow-hidden">
-        <div className="relative h-48 w-full">
-          <Image
-            src="/char/badrinath.jpeg?height=400&width=600&text=Badrinath+Temple"
-            alt="Badrinath Temple"
-            fill
-            className="object-cover"
-          />
-          <Badge className="absolute top-3 left-3 z-10">Pilgrimage</Badge>
-        </div>
-        <CardHeader>
-          <CardTitle>Badrinath Dham</CardTitle>
-          <CardDescription>
-            Sacred abode of Lord Vishnu in the Garhwal Himalayas at 3,133m
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="flex items-center gap-2 mb-4">
-            <Clock className="h-4 w-4 text-muted-foreground" />
-            <span className="text-sm">3 Days</span>
+      {/* Similar Destinations */}
+      <section className="py-16">
+        <div className="container px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">More Sacred Journeys</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Explore other divine pilgrimages in the Himalayas
+            </p>
           </div>
-          <div className="flex items-center justify-between">
-            <p className="font-semibold">₹6,999</p>
-            <Badge variant="outline">Easy</Badge>
-          </div>
-        </CardContent>
-        <CardFooter>
-        <Button asChild className="w-full">
-            <Link  href="https://wa.me/919259071008?text=I'm%20interested%20in%20Badrinath%20Dham%20Yatra%20and%20would%20like%20to%20know%20more%20details">Know More</Link>
-          </Button>
-        </CardFooter>
-      </Card>
 
-      <Card className="overflow-hidden">
-        <div className="relative h-48 w-full">
-          <Image
-            src="/char/kedarnath1.jpeg?height=400&width=600&text=Kedarnath+Temple"
-            alt="Kedarnath Temple"
-            fill
-            className="object-cover"
-          />
-          <Badge className="absolute top-3 left-3 z-10">Pilgrimage</Badge>
-        </div>
-        <CardHeader>
-          <CardTitle>Kedarnath Dham</CardTitle>
-          <CardDescription>
-            Jyotirlinga of Lord Shiva at 3,583m amidst majestic Himalayan peaks
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="flex items-center gap-2 mb-4">
-            <Clock className="h-4 w-4 text-muted-foreground" />
-            <span className="text-sm">4 Days</span>
-          </div>
-          <div className="flex items-center justify-between">
-            <p className="font-semibold">₹7,999</p>
-            <Badge variant="outline">Moderate</Badge>
-          </div>
-        </CardContent>
-        <CardFooter>
-        <Button asChild className="w-full">
-            <Link  href="https://wa.me/919259071008?text=I'm%20interested%20in%20Kedarnath%20Yatra%20and%20would%20like%20to%20know%20more%20details">Know More</Link>
-          </Button>
-        </CardFooter>
-      </Card>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Card className="overflow-hidden">
+              <div className="relative h-48 w-full">
+                <Image
+                  src="/char/badrinath.jpeg?height=400&width=600&text=Badrinath+Temple"
+                  alt="Badrinath Temple"
+                  fill
+                  className="object-cover"
+                />
+                <Badge className="absolute top-3 left-3 z-10">Pilgrimage</Badge>
+              </div>
+              <CardHeader>
+                <CardTitle>Badrinath Dham</CardTitle>
+                <CardDescription>
+                  Sacred abode of Lord Vishnu in the Garhwal Himalayas at 3,133m
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center gap-2 mb-4">
+                  <Clock className="h-4 w-4 text-muted-foreground" />
+                  <span className="text-sm">3 Days</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <p className="font-semibold">₹6,999</p>
+                  <Badge variant="outline">Easy</Badge>
+                </div>
+              </CardContent>
+              <CardFooter>
+                <Button asChild className="w-full">
+                  <Link href="https://wa.me/919259071008?text=I'm%20interested%20in%20Badrinath%20Dham%20Yatra%20and%20would%20like%20to%20know%20more%20details">Know More</Link>
+                </Button>
+              </CardFooter>
+            </Card>
 
-      <Card className="overflow-hidden">
-        <div className="relative h-48 w-full">
-          <Image
-            src="/char/vaishnodevi.jpeg?height=400&width=600&text=Vaishno+Devi"
-            alt="Vaishno Devi Temple"
-            fill
-            className="object-cover"
-          />
-          <Badge className="absolute top-3 left-3 z-10">Pilgrimage</Badge>
+            <Card className="overflow-hidden">
+              <div className="relative h-48 w-full">
+                <Image
+                  src="/char/kedarnath1.jpeg?height=400&width=600&text=Kedarnath+Temple"
+                  alt="Kedarnath Temple"
+                  fill
+                  className="object-cover"
+                />
+                <Badge className="absolute top-3 left-3 z-10">Pilgrimage</Badge>
+              </div>
+              <CardHeader>
+                <CardTitle>Kedarnath Dham</CardTitle>
+                <CardDescription>
+                  Jyotirlinga of Lord Shiva at 3,583m amidst majestic Himalayan peaks
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center gap-2 mb-4">
+                  <Clock className="h-4 w-4 text-muted-foreground" />
+                  <span className="text-sm">4 Days</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <p className="font-semibold">₹7,999</p>
+                  <Badge variant="outline">Moderate</Badge>
+                </div>
+              </CardContent>
+              <CardFooter>
+                <Button asChild className="w-full">
+                  <Link href="https://wa.me/919259071008?text=I'm%20interested%20in%20Kedarnath%20Yatra%20and%20would%20like%20to%20know%20more%20details">Know More</Link>
+                </Button>
+              </CardFooter>
+            </Card>
+
+            <Card className="overflow-hidden">
+              <div className="relative h-48 w-full">
+                <Image
+                  src="/char/vaishnodevi.jpeg?height=400&width=600&text=Vaishno+Devi"
+                  alt="Vaishno Devi Temple"
+                  fill
+                  className="object-cover"
+                />
+                <Badge className="absolute top-3 left-3 z-10">Pilgrimage</Badge>
+              </div>
+              <CardHeader>
+                <CardTitle>Vaishno Devi Yatra</CardTitle>
+                <CardDescription>
+                  Sacred shrine of Mata Vaishno Devi in the Trikuta Mountains
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center gap-2 mb-4">
+                  <Clock className="h-4 w-4 text-muted-foreground" />
+                  <span className="text-sm">4 Days</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <p className="font-semibold">₹14,999</p>
+                  <Badge variant="outline">Moderate</Badge>
+                </div>
+              </CardContent>
+              <CardFooter>
+                <Button asChild className="w-full">
+                  <Link href="https://wa.me/919259071008?text=I'm%20interested%20in%20Vaishno%20Devi%20Yatra%20and%20would%20like%20to%20know%20more%20details">Know More</Link>
+                </Button>
+              </CardFooter>
+            </Card>
+          </div>
         </div>
-        <CardHeader>
-          <CardTitle>Vaishno Devi Yatra</CardTitle>
-          <CardDescription>
-            Sacred shrine of Mata Vaishno Devi in the Trikuta Mountains
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="flex items-center gap-2 mb-4">
-            <Clock className="h-4 w-4 text-muted-foreground" />
-            <span className="text-sm">4 Days</span>
-          </div>
-          <div className="flex items-center justify-between">
-            <p className="font-semibold">₹14,999</p>
-            <Badge variant="outline">Moderate</Badge>
-          </div>
-        </CardContent>
-        <CardFooter>
-          <Button asChild className="w-full">
-            <Link  href="https://wa.me/919259071008?text=I'm%20interested%20in%20Vaishno%20Devi%20Yatra%20and%20would%20like%20to%20know%20more%20details">Know More</Link>
-          </Button>
-        </CardFooter>
-      </Card>
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* CTA Section */}
       <section className="py-16 bg-primary text-primary-foreground">
@@ -566,10 +531,8 @@ export default function AdiKailashPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link
-                  href={`/book/adi-kailash-${destination.upcomingDepartures[0].date.toLowerCase().replace(/\s+/g, "-")}`}
-                >
-                  Book Now
+                <Link href="/contact">
+                  Contact for Booking
                 </Link>
               </Button>
               <Button
@@ -610,4 +573,3 @@ export default function AdiKailashPage() {
     </div>
   )
 }
-

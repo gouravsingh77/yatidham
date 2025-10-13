@@ -95,7 +95,7 @@ export default function PilgrimagesPage() {
                 <div className="space-y-3 mb-4">
                   <div className="flex items-center gap-2">
                     <Calendar className="h-4 w-4 text-muted-foreground" />
-                    <span className="text-sm">6 Days | Next Departure: May 14, 2025</span>
+                    <span className="text-sm">6 Days | Next Departure: October, November</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="h-4 w-4 text-muted-foreground" />
@@ -109,7 +109,7 @@ export default function PilgrimagesPage() {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-sm text-muted-foreground">Starting from</p>
-                    <p className="text-2xl font-bold">₹25,999</p>
+                    <p className="text-2xl font-bold">₹24,999</p>
                   </div>
                   <Button asChild>
                     <Link href="/destinations/adi-kailash">View Details</Link>
@@ -132,7 +132,7 @@ export default function PilgrimagesPage() {
                 <div className="space-y-3 mb-4">
                   <div className="flex items-center gap-2">
                     <Calendar className="h-4 w-4 text-muted-foreground" />
-                    <span className="text-sm">10 Days | Next Departure: May 20, 2025</span>
+                    <span className="text-sm">10 Days | </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="h-4 w-4 text-muted-foreground" />
@@ -174,7 +174,7 @@ export default function PilgrimagesPage() {
                 <div className="space-y-3 mb-4">
                   <div className="flex items-center gap-2">
                     <Calendar className="h-4 w-4 text-muted-foreground" />
-                    <span className="text-sm">7 Days | Next Departure: May 15, 2025</span>
+                    <span className="text-sm">7 Days | </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="h-4 w-4 text-muted-foreground" />

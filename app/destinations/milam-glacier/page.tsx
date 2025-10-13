@@ -15,7 +15,7 @@ export default function MilamGlacierPage() {
       "Journey through the ancient Indo-Tibetan trade route to reach the magnificent Milam Glacier, offering stunning views of Nanda Devi and surrounding peaks. The Milam Glacier trek takes you through beautiful valleys, dense forests, and quaint villages, providing a perfect blend of natural beauty, cultural experiences, and adventure.",
     image: "/himalayas.jpg?height=600&width=1200&text=Milam+Glacier",
     gallery: [
-      "/milam/milamglacier.jpg?height=400&width=600&text=Milam+Glacier+1",
+      "/milam/milam.jpeg?height=400&width=600&text=Milam+Glacier+1",
       "/milam/milam1.jpg?height=400&width=600&text=Milam+Valley",
       "/milam/milam2.jpg?height=400&width=600&text=Lilam+Village",
       "/milam/milam3.jpg?height=400&width=600&text=Nanda+Devi+View",
@@ -107,24 +107,7 @@ export default function MilamGlacierPage() {
         answer:
           "On clear days, you can get spectacular views of Nanda Devi, Nanda Devi East, and other surrounding peaks. The best views are usually in the early morning hours.",
       },
-    ],
-    upcomingDepartures: [
-      {
-        date: "August 5, 2025",
-        spotsLeft: 8,
-        price: 13999,
-      },
-      {
-        date: "August 10, 2025",
-        spotsLeft: 10,
-        price: 13999,
-      },
-      {
-        date: "September 15, 2025",
-        spotsLeft: 12,
-        price: 13999,
-      },
-    ],
+    ]
   }
 
   return (
@@ -274,7 +257,7 @@ export default function MilamGlacierPage() {
               <Card className="sticky top-24">
                 <CardHeader>
                   <CardTitle>Book This Trek</CardTitle>
-                  <CardDescription>Choose from upcoming departures</CardDescription>
+                  <CardDescription>Contact us for available dates</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center justify-between">
@@ -287,28 +270,9 @@ export default function MilamGlacierPage() {
                     </Badge>
                   </div>
 
-                  <div className="space-y-3">
-                    {destination.upcomingDepartures.map((departure, index) => (
-                      <div key={index} className="flex items-center justify-between p-3 border rounded-lg">
-                        <div>
-                          <div className="flex items-center gap-2">
-                            <Calendar className="h-4 w-4 text-primary" />
-                            <span className="font-medium">{departure.date}</span>
-                          </div>
-                          <p className="text-sm text-muted-foreground">{departure.spotsLeft} spots left</p>
-                        </div>
-                        <Button asChild size="sm">
-                          <Link href={`/book/milam-glacier-${departure.date.toLowerCase().replace(/\s+/g, "-")}`}>
-                            Book Now
-                          </Link>
-                        </Button>
-                      </div>
-                    ))}
-                  </div>
-
                   <div className="pt-4">
                     <Button asChild className="w-full">
-                      <Link href="/contact">Request Custom Date</Link>
+                      <Link href="/contact">Contact for Dates</Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -558,10 +522,8 @@ export default function MilamGlacierPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link
-                  href={`/book/milam-glacier-${destination.upcomingDepartures[0].date.toLowerCase().replace(/\s+/g, "-")}`}
-                >
-                  Book Now
+                <Link href="/contact">
+                  Contact for Booking
                 </Link>
               </Button>
               <Button
@@ -602,4 +564,3 @@ export default function MilamGlacierPage() {
     </div>
   )
 }
-

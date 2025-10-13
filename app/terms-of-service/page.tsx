@@ -126,7 +126,7 @@ export default function TermsOfServicePage() {
           </Link>
         </p>
 
-        <p className="text-sm text-muted-foreground mt-8">Last Updated: April 7, 202</p>
+        <p className="text-sm text-muted-foreground mt-8">Last Updated: April 7, 2025</p>
       </div>
     </div>
   )

@@ -111,24 +111,7 @@ export default function NandaDeviEastBaseCampPage() {
         answer:
           "Temperatures at base camp can drop below freezing at night, even in summer (May-June: -5°C to 10°C, Sept-Oct: -10°C to 5°C). We provide high-quality sleeping bags rated for these temperatures."
       }
-    ],
-    upcomingDepartures: [
-      {
-        date: "Aug 20, 2025",
-        spotsLeft: 6,
-        price: 15999,
-      },
-      {
-        date: "Sep 10, 2025",
-        spotsLeft: 8,
-        price: 15999,
-      },
-      {
-        date: "September 25, 2025",
-        spotsLeft: 10,
-        price: 15999,
-      },
-    ],
+    ]
   }
 
   return (
@@ -278,7 +261,7 @@ export default function NandaDeviEastBaseCampPage() {
               <Card className="sticky top-24">
                 <CardHeader>
                   <CardTitle>Book Your Trek</CardTitle>
-                  <CardDescription>Choose from upcoming departures</CardDescription>
+                  <CardDescription>Start your high-altitude adventure</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center justify-between">
@@ -291,28 +274,19 @@ export default function NandaDeviEastBaseCampPage() {
                     </Badge>
                   </div>
 
-                  <div className="space-y-3">
-                    {destination.upcomingDepartures.map((departure, index) => (
-                      <div key={index} className="flex items-center justify-between p-3 border rounded-lg">
-                        <div>
-                          <div className="flex items-center gap-2">
-                            <Calendar className="h-4 w-4 text-primary" />
-                            <span className="font-medium">{departure.date}</span>
-                          </div>
-                          <p className="text-sm text-muted-foreground">{departure.spotsLeft} spots left</p>
-                        </div>
-                        <Button asChild size="sm">
-                        <Link href="/book/nanda-devi">
-                            Book Now
-                          </Link>
-                        </Button>
+                  <div className="space-y-4">
+                    <div className="p-3 border rounded-lg bg-blue-50 border-blue-200">
+                      <div className="flex items-center gap-2 mb-2">
+                        <Calendar className="h-4 w-4 text-blue-600" />
+                        <span className="font-medium text-blue-900">Flexible Departures</span>
                       </div>
-                    ))}
+                      <p className="text-sm text-blue-700">Available throughout the season - choose your preferred dates</p>
+                    </div>
                   </div>
 
                   <div className="pt-4">
                     <Button asChild className="w-full">
-                      <Link href="/contact">Request Custom Date</Link>
+                      <Link href="/contact">Book Now</Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -467,7 +441,7 @@ export default function NandaDeviEastBaseCampPage() {
                 <Badge className="absolute top-3 left-3 z-10">Ridge Trek</Badge>
               </div>
               <CardHeader>
-                <CardTitle>Ralam Dhura Trek </CardTitle>
+                <CardTitle>Ralam Dhura Trek</CardTitle>
                 <CardDescription>
                   Beautiful trek to the "Moon's Peak" with panoramic Himalayan views
                 </CardDescription>
@@ -484,7 +458,7 @@ export default function NandaDeviEastBaseCampPage() {
               </CardContent>
               <CardFooter>
                 <Button asChild className="w-full">
-                  <Link href="https://wa.me/919259071008?text=I'm%20interested%20in%20Nanda%20Khat%20Trek%20and%20would%20like%20to%20know%20more%20details">Know More</Link>
+                  <Link href="/destinations/ralam-dhura">View Details</Link>
                 </Button>
               </CardFooter>
             </Card>
@@ -511,13 +485,13 @@ export default function NandaDeviEastBaseCampPage() {
                   <span className="text-sm">5 Days</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <p className="font-semibold">₹8,999</p>
+                  <p className="font-semibold">₹9,999</p>
                   <Badge variant="outline">Moderate</Badge>
                 </div>
               </CardContent>
               <CardFooter>
                 <Button asChild className="w-full">
-                  <Link href="https://wa.me/919259071008?text=I'm%20interested%20in%20Panchachuli%20Base%20Camp%20Trek%20and%20would%20like%20to%20know%20more%20details">Know More</Link>
+                  <Link href="/destinations/panchachuli">View Details</Link>
                 </Button>
               </CardFooter>
             </Card>
@@ -525,7 +499,7 @@ export default function NandaDeviEastBaseCampPage() {
             <Card className="overflow-hidden">
               <div className="relative h-48 w-full">
                 <Image
-                  src="/pindari/pindari3.jpeg?height=400&width=600&text=Kuari+Pass"
+                  src="/milam/bankatiya.jpg?height=400&width=600&text=Kuari+Pass"
                   alt="Kuari Pass Trek"
                   fill
                   className="object-cover"
@@ -533,26 +507,27 @@ export default function NandaDeviEastBaseCampPage() {
                 <Badge className="absolute top-3 left-3 z-10">Classic Trek</Badge>
               </div>
               <CardHeader>
-                <CardTitle>Kuari Pass Trek</CardTitle>
-                <CardDescription>
-                  Lord Curzon's Trail with spectacular views of Nanda Devi and Dronagiri
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex items-center gap-2 mb-4">
-                  <Clock className="h-4 w-4 text-muted-foreground" />
-                  <span className="text-sm">6 Days</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <p className="font-semibold">₹8,999</p>
-                  <Badge variant="outline">Moderate</Badge>
-                </div>
-              </CardContent>
-              <CardFooter>
-                <Button asChild className="w-full">
-                  <Link href="https://wa.me/919259071008?text=I'm%20interested%20in%20Kuari%20Pass%20Trek%20and%20would%20like%20to%20know%20more%20details">Know More</Link>
-                </Button>
-              </CardFooter>
+  <CardTitle>Bankatiya Base Camp Trek</CardTitle>
+  <CardDescription>
+    A hidden gem of Munsiyari through pristine valleys leading to one of the most beautiful glaciers.
+  </CardDescription>
+</CardHeader>
+<CardContent>
+  <div className="flex items-center gap-2 mb-4">
+    <Clock className="h-4 w-4 text-muted-foreground" />
+    <span className="text-sm">5 Days</span>
+  </div>
+  <div className="flex items-center justify-between">
+    <p className="font-semibold">₹8,999</p>
+    <Badge variant="outline">Moderate</Badge>
+  </div>
+</CardContent>
+<CardFooter>
+  <Button asChild className="w-full">
+    <Link href="/destinations/bankatiya">View Details</Link>
+  </Button>
+</CardFooter>
+
             </Card>
           </div>
         </div>
@@ -568,9 +543,7 @@ export default function NandaDeviEastBaseCampPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link
-                  href={`/book/nanda-devi${destination.upcomingDepartures[0].date.toLowerCase().replace(/\s+/g, "-")}`}
-                >
+                <Link href="/contact">
                   Book Now
                 </Link>
               </Button>

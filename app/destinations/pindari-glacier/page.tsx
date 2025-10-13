@@ -109,23 +109,6 @@ export default function PindariGlacierPage() {
           "Accommodation includes guesthouses in villages, homestays, and camping in remote areas. Facilities are basic but comfortable.",
       },
     ],
-    upcomingDepartures: [
-      {
-        date: "Aug 15, 2025",
-        spotsLeft: 10,
-        price: 12999,
-      },
-      {
-        date: "Sep 5, 2025",
-        spotsLeft: 8,
-        price: 12999,
-      },
-      {
-        date: "October 10, 2025",
-        spotsLeft: 6,
-        price: 12999,
-      },
-    ],
   };
 
   return (
@@ -265,7 +248,7 @@ export default function PindariGlacierPage() {
               <Card className="sticky top-24">
                 <CardHeader>
                   <CardTitle>Book This Trek</CardTitle>
-                  <CardDescription>Choose from upcoming departures</CardDescription>
+                  <CardDescription>Start your adventure today</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center justify-between">
@@ -278,28 +261,9 @@ export default function PindariGlacierPage() {
                     </Badge>
                   </div>
 
-                  <div className="space-y-3">
-                    {destination.upcomingDepartures.map((departure, index) => (
-                      <div key={index} className="flex items-center justify-between p-3 border rounded-lg">
-                        <div>
-                          <div className="flex items-center gap-2">
-                            <Calendar className="h-4 w-4 text-primary" />
-                            <span className="font-medium">{departure.date}</span>
-                          </div>
-                          <p className="text-sm text-muted-foreground">{departure.spotsLeft} spots left</p>
-                        </div>
-                        <Button asChild size="sm">
-                          <Link href={`/book/pindari-glacier${departure.date.toLowerCase().replace(/\s+/g, "-")}`}>
-                            Book Now
-                          </Link>
-                        </Button>
-                      </div>
-                    ))}
-                  </div>
-
                   <div className="pt-4">
                     <Button asChild className="w-full">
-                      <Link href="/contact">Request Custom Date</Link>
+                      <Link href="/book/pindari-glacier">Book Now</Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -450,7 +414,7 @@ export default function PindariGlacierPage() {
             <p className="text-xl mb-8 opacity-90">Book your trek today and embark on a journey of a lifetime</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link href="/book/nanda-devi">Book Now</Link>
+                <Link href="/book/pindari-glacier">Book Now</Link>
               </Button>
               <Button
                 asChild
@@ -490,4 +454,3 @@ export default function PindariGlacierPage() {
     </div>
   )
 }
-

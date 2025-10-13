@@ -86,12 +86,60 @@ export default function DestinationsPage() {
                     </Button>
                   </CardFooter>
                 </Card>
+                
+                {/* Bankatiya Peak Base Camp Trek */}
+<               Card className="overflow-hidden">
+                      <div className="relative h-48 w-full">
+    <Image
+      src="/milam/bankatiya.jpg?height=400&width=600"
+      alt="Bankatiya Peak Base Camp Trek"
+      fill
+      className="object-cover"
+    />
+    <Badge className="absolute top-3 left-3 z-10">Himalayan Expedition</Badge>
+  </div>
+  <CardHeader>
+    <CardTitle>Bankatiya Base Camp Trek</CardTitle>
+    <CardDescription>
+     Trek of the year 2025,  Explore the raw beauty of Laspa Village and camp beneath the mighty Bankatiya Peak
+    </CardDescription>
+  </CardHeader>
+  <CardContent>
+    <div className="grid grid-cols-2 gap-4 mb-4">
+      <div className="flex items-center gap-2">
+        <Clock className="h-4 w-4 text-muted-foreground" />
+        <span className="text-sm">4 Days</span>
+      </div>
+      <div className="flex items-center gap-2">
+        <Mountain className="h-4 w-4 text-muted-foreground" />
+        <span className="text-sm">Moderate t</span>
+      </div>
+      <div className="flex items-center gap-2">
+        <Calendar className="h-4 w-4 text-muted-foreground" />
+        <span className="text-sm">May–October</span>
+      </div>
+      <div className="flex items-center gap-2">
+        <MapPin className="h-4 w-4 text-muted-foreground" />
+        <span className="text-sm">Uttarakhand</span>
+      </div>
+    </div>
+    <p className="text-sm text-muted-foreground mb-4">
+      Begin your adventure from Laspa Village, trekking through pine forests, alpine meadows, 
+      and pristine streams to reach the base of Bankatiya Peak — a hidden gem of the Johar Valley.
+    </p>
+  </CardContent>
+  <CardFooter>
+    <Button asChild className="w-full">
+      <Link href="/destinations/bankatiya">View Details</Link>
+    </Button>
+  </CardFooter>
+</Card>
 
                 {/* Milam Glacier */}
                 <Card className="overflow-hidden">
                   <div className="relative h-48 w-full">
                     <Image
-                      src="/milam/milamglacier.jpg?height=400&width=600"
+                      src="/milam/milam.jpeg?height=400&width=600"
                       alt="Milam Glacier"
                       fill
                       className="object-cover"
@@ -793,11 +841,60 @@ export default function DestinationsPage() {
 
             <TabsContent value="adventure">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+               
+               {/* Bankatiya Peak Base Camp Trek */}
+<               Card className="overflow-hidden">
+                      <div className="relative h-48 w-full">
+    <Image
+      src="/milam/bankatiya.jpg?height=400&width=600"
+      alt="Bankatiya Peak Base Camp Trek"
+      fill
+      className="object-cover"
+    />
+    <Badge className="absolute top-3 left-3 z-10">Himalayan Expedition</Badge>
+  </div>
+  <CardHeader>
+    <CardTitle>Bankatiya Base Camp Trek</CardTitle>
+    <CardDescription>
+     Trek of the year 2025,  Explore the raw beauty of Laspa Village and camp beneath the mighty Bankatiya Peak
+    </CardDescription>
+  </CardHeader>
+  <CardContent>
+    <div className="grid grid-cols-2 gap-4 mb-4">
+      <div className="flex items-center gap-2">
+        <Clock className="h-4 w-4 text-muted-foreground" />
+        <span className="text-sm">4 Days</span>
+      </div>
+      <div className="flex items-center gap-2">
+        <Mountain className="h-4 w-4 text-muted-foreground" />
+        <span className="text-sm">Moderate </span>
+      </div>
+      <div className="flex items-center gap-2">
+        <Calendar className="h-4 w-4 text-muted-foreground" />
+        <span className="text-sm">May–October</span>
+      </div>
+      <div className="flex items-center gap-2">
+        <MapPin className="h-4 w-4 text-muted-foreground" />
+        <span className="text-sm">Uttarakhand</span>
+      </div>
+    </div>
+    <p className="text-sm text-muted-foreground mb-4">
+      Begin your adventure from Laspa Village, trekking through pine forests, alpine meadows, 
+      and pristine streams to reach the base of Bankatiya Peak — a hidden gem of the Johar Valley.
+    </p>
+  </CardContent>
+  <CardFooter>
+    <Button asChild className="w-full">
+      <Link href="/destinations/bankatiya">View Details</Link>
+    </Button>
+  </CardFooter>
+</Card>
+
                 {/* Milam Glacier */}
                 <Card className="overflow-hidden">
                   <div className="relative h-48 w-full">
                     <Image
-                      src="/milam/milamglacier.jpg?height=400&width=600"
+                      src="/milam/milam.jpeg?height=400&width=600"
                       alt="Milam Glacier"
                       fill
                       className="object-cover"
@@ -1006,7 +1103,7 @@ export default function DestinationsPage() {
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-primary"
               >
-                <Link href="/packages">View All Packages</Link>
+                <Link href="/about">About us</Link>
               </Button>
             </div>
           </div>

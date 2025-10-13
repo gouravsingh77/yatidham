@@ -23,9 +23,7 @@ export function MainNav({ className, ...props }: React.HTMLAttributes<HTMLElemen
         <Link href="/destinations" className="text-sm font-medium transition-colors hover:text-primary">
           Destinations
         </Link>
-        <Link href="/packages" className="text-sm font-medium transition-colors hover:text-primary">
-          Packages
-        </Link>
+        
         <Link href="/gallery" className="text-sm font-medium transition-colors hover:text-primary">
           Gallery
         </Link>

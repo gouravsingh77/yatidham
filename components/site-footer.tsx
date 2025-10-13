@@ -18,11 +18,11 @@ export function SiteFooter() {
               sustainable tourism.
             </p>
             <div className="flex space-x-4">
-              <Link href="https://www.facebook.com/profile.php?id=61574082925095" className="text-muted-foreground hover:text-primary">
+              <Link href="#" className="text-muted-foreground hover:text-primary">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="https://www.instagram.com/yatidham/" className="text-muted-foreground hover:text-primary">
+              <Link href="#" className="text-muted-foreground hover:text-primary">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
@@ -51,11 +51,7 @@ export function SiteFooter() {
                   Destinations
                 </Link>
               </li>
-              <li>
-                <Link href="/packages" className="text-muted-foreground hover:text-primary">
-                  Packages
-                </Link>
-              </li>
+              
               <li>
                 <Link href="/testimonials" className="text-muted-foreground hover:text-primary">
                   Testimonials
@@ -120,7 +116,7 @@ export function SiteFooter() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
-                <Link href="mailto:yatidham1008@gmail.com" className="text-muted-foreground hover:text-primary">
+                <Link href="mailto:info@yatidham.com" className="text-muted-foreground hover:text-primary">
                   yatidham1008@gmail.com
                 </Link>
               </li>

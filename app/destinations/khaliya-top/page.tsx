@@ -102,25 +102,7 @@ export default function KhaliyaTopPage() {
         answer:
           "Yes, Khaliya Top is suitable for children above 7 years of age who enjoy outdoor activities. The trek is not too strenuous and the duration is short, making it family-friendly.",
       },
-    ],
-    upcomingDepartures: [
-      {
-    
-        date: " May 25, 2025",
-        spotsLeft: 10,
-        price: 7999,
-      },
-      {
-        date: "July 15, 2025",
-        spotsLeft: 12,
-        price: 7999,
-      },
-      {
-        date: "September 10, 2025",
-        spotsLeft: 15,
-        price: 7999,
-      },
-    ],
+    ]
   }
 
   return (
@@ -270,7 +252,7 @@ export default function KhaliyaTopPage() {
               <Card className="sticky top-24">
                 <CardHeader>
                   <CardTitle>Book This Trek</CardTitle>
-                  <CardDescription>Fixed Departure Every Saturday</CardDescription>
+                  <CardDescription>Contact us for available dates</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center justify-between">
@@ -283,28 +265,9 @@ export default function KhaliyaTopPage() {
                     </Badge>
                   </div>
 
-                  <div className="space-y-3">
-                    {destination.upcomingDepartures.map((departure, index) => (
-                      <div key={index} className="flex items-center justify-between p-3 border rounded-lg">
-                        <div>
-                          <div className="flex items-center gap-2">
-                            <Calendar className="h-4 w-4 text-primary" />
-                            <span className="font-medium">{departure.date}</span>
-                          </div>
-                          <p className="text-sm text-muted-foreground">{departure.spotsLeft} spots left</p>
-                        </div>
-                        <Button asChild size="sm">
-                          <Link href={`/book/khaliya-top-${departure.date.toLowerCase().replace(/\s+/g, "-")}`}>
-                            Book Now
-                          </Link>
-                        </Button>
-                      </div>
-                    ))}
-                  </div>
-
                   <div className="pt-4">
                     <Button asChild className="w-full">
-                      <Link href="/contact">Request Custom Date</Link>
+                      <Link href="/contact">Contact for Dates</Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -554,10 +517,8 @@ export default function KhaliyaTopPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link
-                  href={`/book/khaliya-top-${destination.upcomingDepartures[0].date.toLowerCase().replace(/\s+/g, "-")}`}
-                >
-                  Book Now
+                <Link href="/contact">
+                  Contact for Booking
                 </Link>
               </Button>
               <Button
@@ -598,4 +559,3 @@ export default function KhaliyaTopPage() {
     </div>
   )
 }
-

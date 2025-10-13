@@ -1,5 +1,3 @@
-"use client"
-
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
@@ -98,24 +96,7 @@ export default function PanchachuliPage() {
         answer:
           "Yes, as this area is near the Indo-Tibet border, you need an Inner Line Permit (ILP). We arrange this permit for all our trekkers as part of the package.",
       },
-    ],
-    upcomingDepartures: [
-      {
-        date: "Aug 15, 2025",
-        spotsLeft: 6,
-        price: 9999,
-      },
-      {
-        date: "Sep 5, 2025",
-        spotsLeft: 8,
-        price: 9999,
-      },
-      {
-        date: "October 10, 2025",
-        spotsLeft: 10,
-        price: 9999,
-      },
-    ],
+    ]
   }
 
   return (
@@ -255,7 +236,7 @@ export default function PanchachuliPage() {
               <Card className="sticky top-24">
                 <CardHeader>
                   <CardTitle>Book This Trek</CardTitle>
-                  <CardDescription>Choose from upcoming departures</CardDescription>
+                  <CardDescription>Contact us for available dates</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center justify-between">
@@ -268,28 +249,9 @@ export default function PanchachuliPage() {
                     </Badge>
                   </div>
 
-                  <div className="space-y-3">
-                    {destination.upcomingDepartures.map((departure, index) => (
-                      <div key={index} className="flex items-center justify-between p-3 border rounded-lg">
-                        <div>
-                          <div className="flex items-center gap-2">
-                            <Calendar className="h-4 w-4 text-primary" />
-                            <span className="font-medium">{departure.date}</span>
-                          </div>
-                          <p className="text-sm text-muted-foreground">{departure.spotsLeft} spots left</p>
-                        </div>
-                        <Button asChild size="sm">
-                          <Link href={`/book/panchachuli-express-${departure.date.toLowerCase().replace(/\s+/g, "-")}`}>
-                            Book Now
-                          </Link>
-                        </Button>
-                      </div>
-                    ))}
-                  </div>
-
                   <div className="pt-4">
                     <Button asChild className="w-full">
-                      <Link href="/contact">Request Custom Date</Link>
+                      <Link href="/contact">Contact for Dates</Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -440,7 +402,9 @@ export default function PanchachuliPage() {
             <p className="text-xl mb-8 opacity-90">Book your trek today and embark on a journey of a lifetime</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link href="/book/panchachuli-express">Book Now</Link>
+                <Link href="/contact">
+                  Contact for Booking
+                </Link>
               </Button>
               <Button
                 asChild

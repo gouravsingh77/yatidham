@@ -116,24 +116,7 @@ export default function RudranathPage() {
         answer:
           "Mobile network connectivity is limited on the trek. You may get network at Sagar, but as you move higher, the connectivity becomes sparse or non-existent. It's advisable to inform your family about limited connectivity before starting the trek.",
       },
-    ],
-    upcomingDepartures: [
-      {
-        date: "May 15, 2025",
-        spotsLeft: 4,
-        price: 11999,
-      },
-      {
-        date: "June 1, 2025",
-        spotsLeft: 8,
-        price: 11999,
-      },
-      {
-        date: "September 10, 2025",
-        spotsLeft: 10,
-        price: 11999,
-      },
-    ],
+    ]
   }
 
   return (
@@ -283,7 +266,7 @@ export default function RudranathPage() {
               <Card className="sticky top-24">
                 <CardHeader>
                   <CardTitle>Book This Trek</CardTitle>
-                  <CardDescription>Choose from upcoming departures</CardDescription>
+                  <CardDescription>Contact us for available dates</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center justify-between">
@@ -296,28 +279,9 @@ export default function RudranathPage() {
                     </Badge>
                   </div>
 
-                  <div className="space-y-3">
-                    {destination.upcomingDepartures.map((departure, index) => (
-                      <div key={index} className="flex items-center justify-between p-3 border rounded-lg">
-                        <div>
-                          <div className="flex items-center gap-2">
-                            <Calendar className="h-4 w-4 text-primary" />
-                            <span className="font-medium">{departure.date}</span>
-                          </div>
-                          <p className="text-sm text-muted-foreground">{departure.spotsLeft} spots left</p>
-                        </div>
-                        <Button asChild size="sm">
-                        <Link href="/book/rudranath">
-                            Book Now
-                          </Link>
-                        </Button>
-                      </div>
-                    ))}
-                  </div>
-
                   <div className="pt-4">
                     <Button asChild className="w-full">
-                      <Link href="/contact">Request Custom Date</Link>
+                      <Link href="/contact">Contact for Dates</Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -573,10 +537,8 @@ export default function RudranathPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link
-                  href={`/book/rudranath-${destination.upcomingDepartures[0].date.toLowerCase().replace(/\s+/g, "-")}`}
-                >
-                  Book Now
+                <Link href="/contact">
+                  Contact for Booking
                 </Link>
               </Button>
               <Button
@@ -617,4 +579,3 @@ export default function RudranathPage() {
     </div>
   )
 }
-

@@ -63,6 +63,16 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <DestinationCard
+              title="Bankatiya Base Camp Trek"
+              description="Trek of the Year: 
+            hidden Himalayan gem of pure beauty and adventure."
+              image="/milam/bankatiya.jpg?height=400&width=600"
+              category="Adventure Trek"
+              duration="4 Days"
+              difficulty="Moderate"
+              href="/destinations/bankatiya"
+            />
             <DestinationCard
               title="Adi Kailash & Om Parvat"
               description="A sacred pilgrimage to the divine abode of Lord Shiva"
@@ -73,6 +83,7 @@ export default function Home() {
               href="/destinations/adi-kailash"
               
             />
+           { /*
             <DestinationCard
               title="Milam Glacier Trek"
               description="Trek through pristine valleys to one of the most beautiful glaciers"
@@ -81,7 +92,7 @@ export default function Home() {
               duration="5 Days"
               difficulty="Moderate"
               href="/destinations/milam-glacier"
-            />
+            /> */}
             <DestinationCard
               title="Khaliya Top Trek"
               description="A perfect trek for beginners, Khaliya Top offers stunning views of Nanda Devi, Nanda Kot, and Panchachuli peaks from its beautiful meadows."
@@ -155,11 +166,11 @@ export default function Home() {
           <FeaturedTrek
             title="Adi Kailash & Om Parvat Yatra"
             description="Embark on a spiritual journey to the sacred Adi Kailash and witness the divine Om symbol naturally formed on Om Parvat. This pilgrimage offers breathtaking views of the Himalayas and a profound spiritual experience."
-            image="/adi/adi1.jpg?height=600&width=1200"
+            image="/adi/manoj.JPG?height=600&width=1200"
             duration="6 Days"
             difficulty="Moderate"
-            price="₹25,999"
-            startDate="May 14, 2025"
+            price="24,999"
+            startDate="October, November, 2025"
             href="/destinations/adi-kailash"
             
           />
@@ -212,7 +223,7 @@ export default function Home() {
       <section className="py-16 bg-muted">
         <div className="container px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Upcoming Fixed Departures</h2>
+            <h2 className="text-3xl font-bold mb-4">Upcoming  Departures</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Secure your spot on our scheduled group departures
             </p>
@@ -223,17 +234,17 @@ export default function Home() {
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-2">
                   <Calendar className="h-5 w-5 text-primary" />
-                  <span className="text-sm font-medium">May 14, 2025</span>
+                  <span className="text-sm font-medium">October, November, 2025</span>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Adi Kailash & Om Parvat</h3>
-                <p className="text-muted-foreground mb-4">6 Days | ₹25,999 per person</p>
+                <p className="text-muted-foreground mb-4">6 Days | ₹24,999 per person</p>
                 <div className="flex items-center gap-2 mb-4">
                   <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">
                     6 Spots Left
                   </Badge>
                 </div>
                 <Button asChild className="w-full">
-                  <Link href="/book/adi-kailash">Book Now</Link>
+                  <Link href="/destinations/adi-kailash">Book Now</Link>
                 </Button>
               </div>
             </div>
@@ -242,17 +253,17 @@ export default function Home() {
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-2">
                   <Calendar className="h-5 w-5 text-primary" />
-                  <span className="text-sm font-medium">Aug 1, 2025</span>
+                  <span className="text-sm font-medium">October, November, 2025</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Milam Glacier Trek</h3>
-                <p className="text-muted-foreground mb-4">5 Days | ₹13,999 per person</p>
+                <h3 className="text-xl font-semibold mb-2">Bankatiya Base Camp Trek</h3>
+                <p className="text-muted-foreground mb-4">5 Days | ₹8,999 per person</p>
                 <div className="flex items-center gap-2 mb-4">
                   <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">
                     8 Spots Left
                   </Badge>
                 </div>
                 <Button asChild className="w-full">
-                  <Link href="/book/milam-glacier">Book Now</Link>
+                  <Link href="/destinations/bankatiya">Book Now</Link>
                 </Button>
               </div>
             </div>
@@ -261,17 +272,17 @@ export default function Home() {
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-2">
                   <Calendar className="h-5 w-5 text-primary" />
-                  <span className="text-sm font-medium">May 15, 2025</span>
+                  <span className="text-sm font-medium">winter's, 2025</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Rudranath Trek</h3>
-                <p className="text-muted-foreground mb-4">6 Days | ₹11,999 per person</p>
+                <h3 className="text-xl font-semibold mb-2">Khaliya Top Trek</h3>
+                <p className="text-muted-foreground mb-4">4 Days | ₹7,999 per person</p>
                 <div className="flex items-center gap-2 mb-4">
                   <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">
                     4 Spots Left
                   </Badge>
                 </div>
                 <Button asChild className="w-full">
-                  <Link href="/book/rudranath">Book Now</Link>
+                  <Link href="/destinations/khaliya-top">Book Now</Link>
                 </Button>
               </div>
             </div>

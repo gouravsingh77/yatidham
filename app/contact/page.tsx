@@ -281,14 +281,7 @@ export default function ContactPage() {
               <Button asChild size="lg" variant="secondary">
                 <Link href="/destinations">Explore Destinations</Link>
               </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-primary"
-              >
-                <Link href="/packages">View Packages</Link>
-              </Button>
+             
             </div>
           </div>
         </div>

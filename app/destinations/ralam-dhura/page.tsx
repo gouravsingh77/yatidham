@@ -21,7 +21,7 @@ export default function RalamGlacierPage() {
       "/ralam/ralam1.jpeg?height=400&width=600&text=Ralam+Glacier",
     ],
     category: "Glacier Trek",
-    duration: "8 Days",
+    duration: "7 Days",
     difficulty: "Challenging",
     maxAltitude: "3,800m",
     bestSeason: "May to June & September to October",
@@ -48,43 +48,38 @@ export default function RalamGlacierPage() {
     itinerary: [
       {
         "day": "Day 1",
-        "title": "Kathgodam to Munsiyari",
-        "description": "Pick-up from Kathgodam Railway Station at 7 AM. Scenic drive through Kumaon hills to Munsiyari (10-11 hours). Overnight stay in Munsiyari with orientation about the trek."
+        "title": "Kathgodam to Munsiyari Drive",
+        "description": "Your journey begins with a scenic drive from Kathgodam to Munsiyari, allowing you to soak in the breathtaking views of the Kumaon Himalayas. Arrive in Munsiyari by evening and check into your accommodation."
       },
       {
         "day": "Day 2",
-        "title": "Munsiyari to Lilam",
-        "description": "Drive to Selapani (1 hour) then start trekking to Lilam (5-6 hours). Descend through dense forests to Gori Ganga valley. Camp near Lilam village (2,200m)."
+        "title": "Munsiyari (Preparation Day)",
+        "description": "Spend a day in Munsiyari acclimatizing and preparing for the trek. This quaint town, located at the base of the great Himalayan wall, offers a glimpse into the serene life of the mountains. Final equipment check and trek briefing."
       },
       {
         "day": "Day 3",
-        "title": "Lilam to Rilkot",
-        "description": "Trek along Gori Ganga river through beautiful forests (5-6 hours). Cross several streams and waterfalls. Camp at Rilkot (2,800m) with views of Panchachuli peaks."
+        "title": "Munsiyari to Panto",
+        "description": "The trek officially begins as you cross the Gori Ganga River and enter the Ralam Valley. The trail to Panto is marked by its pristine beauty and the sound of the flowing river. Set up camp at Panto for the night."
       },
       {
         "day": "Day 4",
-        "title": "Rilkot to Ralam Khark",
-        "description": "Gradual ascent through alpine meadows (4-5 hours). Reach Ralam Khark (3,300m), a beautiful grazing ground with panoramic mountain views. Acclimatization stay."
+        "title": "Panto to Lungriyani",
+        "description": "Continuing along the Ralam Gaad (river), you will camp in the serene surroundings of Lungriyani, a perfect spot to rejuvenate. Enjoy the peaceful atmosphere and stunning mountain views."
       },
       {
         "day": "Day 5",
-        "title": "Ralam Khark to Ralam Glacier Base Camp",
-        "description": "Challenging trek to glacier base camp (5-6 hours). Cross moraines and rocky terrain. Witness the spectacular Ralam Glacier and surrounding peaks. Camp near the glacier (3,800m)."
+        "title": "Lungriyani to Ralam Village",
+        "description": "As you make your way to Ralam Village, the trail offers stunning vistas of the surrounding peaks and valleys. The village serves as a base for the next day's exploration of the glaciers. Experience local culture and hospitality."
       },
       {
         "day": "Day 6",
-        "title": "Exploration Day",
-        "description": "Day to explore the glacier area and nearby viewpoints. Optional hike to get closer views of the glacier. Return to base camp for overnight stay."
+        "title": "Ralam Village to Ralam Glaciers and Back",
+        "description": "This day is dedicated to exploring the majestic Ralam Glaciers. The up-and-down trek covers 10 kilometers, rewarding you with close-up views of the glaciers and the surrounding peaks. Return to Ralam Village for overnight stay."
       },
       {
         "day": "Day 7",
-        "title": "Base Camp to Rilkot",
-        "description": "Descend back to Rilkot (6-7 hours). Enjoy the changing landscapes and vegetation. Celebrate last night in the mountains."
-      },
-      {
-        "day": "Day 8",
-        "title": "Rilkot to Munsiyari to Kathgodam",
-        "description": "Trek back to Selapani (4-5 hours) then drive to Munsiyari. After lunch, begin return journey to Kathgodam. Tour concludes at Kathgodam Railway Station by late evening."
+        "title": "Ralam Village to Munsiyari and Drive to Kathgodam",
+        "description": "Trek back from Ralam Village to Munsiyari, then begin your return journey to Kathgodam. The scenic drive back marks the end of your memorable Ralam Glacier trek adventure."
       }
     ],
     highlights: [
@@ -94,6 +89,8 @@ export default function RalamGlacierPage() {
       "Experience remote Bhotiya culture in mountain villages",
       "Camp in pristine Himalayan wilderness",
       "See unique Himalayan flora and fauna",
+      "Explore traditional Ralam Village",
+      "Scenic drive through Kumaon Himalayas",
     ],
     faqs: [
       {
@@ -121,24 +118,7 @@ export default function RalamGlacierPage() {
         answer:
           "We approach the glacier terminus safely but maintain a reasonable distance as glacier surfaces can be unstable. The views from our base camp location are spectacular and safe.",
       },
-    ],
-    upcomingDepartures: [
-      {
-        date: "Aug 15, 2025",
-        spotsLeft: 6,
-        price: 18999,
-      },
-      {
-        date: "sep 5, 2025",
-        spotsLeft: 8,
-        price: 18999,
-      },
-      {
-        date: "September 20, 2025",
-        spotsLeft: 10,
-        price: 18999,
-      },
-    ],
+    ]
   }
 
   return (
@@ -288,7 +268,7 @@ export default function RalamGlacierPage() {
               <Card className="sticky top-24">
                 <CardHeader>
                   <CardTitle>Book Your Trek</CardTitle>
-                  <CardDescription>Choose from upcoming departures</CardDescription>
+                  <CardDescription>Contact us for available dates</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center justify-between">
@@ -301,28 +281,9 @@ export default function RalamGlacierPage() {
                     </Badge>
                   </div>
 
-                  <div className="space-y-3">
-                    {destination.upcomingDepartures.map((departure, index) => (
-                      <div key={index} className="flex items-center justify-between p-3 border rounded-lg">
-                        <div>
-                          <div className="flex items-center gap-2">
-                            <Calendar className="h-4 w-4 text-primary" />
-                            <span className="font-medium">{departure.date}</span>
-                          </div>
-                          <p className="text-sm text-muted-foreground">{departure.spotsLeft} spots left</p>
-                        </div>
-                        <Button asChild size="sm">
-                          <Link href={`/book/ralam-glacier${departure.date.toLowerCase().replace(/\s+/g, "-")}`}>
-                            Book Now
-                          </Link>
-                        </Button>
-                      </div>
-                    ))}
-                  </div>
-
                   <div className="pt-4">
                     <Button asChild className="w-full">
-                      <Link href="/contact">Request Custom Date</Link>
+                      <Link href="/contact">Contact for Dates</Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -578,10 +539,8 @@ export default function RalamGlacierPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link
-                  href={`/book/ralam-glacier${destination.upcomingDepartures[0].date.toLowerCase().replace(/\s+/g, "-")}`}
-                >
-                  Book Now
+                <Link href="/contact">
+                  Contact for Booking
                 </Link>
               </Button>
               <Button

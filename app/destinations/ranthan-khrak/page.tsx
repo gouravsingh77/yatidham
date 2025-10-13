@@ -106,24 +106,7 @@ export default function RanthanKhrakPage() {
         answer:
           "While beginners with good fitness can attempt this trek, some prior hiking experience is recommended due to the altitude. We recommend preparing with regular cardio exercise before the trek.",
       },
-    ],
-    upcomingDepartures: [
-      {
-        date: "Aug 7, 2025",
-        spotsLeft: 8,
-        price: 8999,
-      },
-      {
-        date: "Aug 25, 2025",
-        spotsLeft: 6,
-        price: 8999,
-      },
-      {
-        date: "September 15, 2025",
-        spotsLeft: 10,
-        price: 8999,
-      },
-    ],
+    ]
   }
 
   return (
@@ -273,7 +256,7 @@ export default function RanthanKhrakPage() {
               <Card className="sticky top-24">
                 <CardHeader>
                   <CardTitle>Book Your Trek</CardTitle>
-                  <CardDescription>Choose from upcoming departures</CardDescription>
+                  <CardDescription>Contact us for available dates</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center justify-between">
@@ -286,28 +269,9 @@ export default function RanthanKhrakPage() {
                     </Badge>
                   </div>
 
-                  <div className="space-y-3">
-                    {destination.upcomingDepartures.map((departure, index) => (
-                      <div key={index} className="flex items-center justify-between p-3 border rounded-lg">
-                        <div>
-                          <div className="flex items-center gap-2">
-                            <Calendar className="h-4 w-4 text-primary" />
-                            <span className="font-medium">{departure.date}</span>
-                          </div>
-                          <p className="text-sm text-muted-foreground">{departure.spotsLeft} spots left</p>
-                        </div>
-                        <Button asChild size="sm">
-                          <Link href={`/book/ranthan-khrak-${departure.date.toLowerCase().replace(/\s+/g, "-")}`}>
-                            Book Now
-                          </Link>
-                        </Button>
-                      </div>
-                    ))}
-                  </div>
-
                   <div className="pt-4">
                     <Button asChild className="w-full">
-                      <Link href="/contact">Request Custom Date</Link>
+                      <Link href="/contact">Contact for Dates</Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -563,10 +527,8 @@ export default function RanthanKhrakPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link
-                  href={`/book/ranthan-khrak-${destination.upcomingDepartures[0].date.toLowerCase().replace(/\s+/g, "-")}`}
-                >
-                  Book Now
+                <Link href="/contact">
+                  Contact for Booking
                 </Link>
               </Button>
               <Button

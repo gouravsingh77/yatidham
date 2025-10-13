@@ -113,24 +113,7 @@ export default function ManaskhandTemplesPage() {
         question: "What should we pack for this pilgrimage?",
         answer: "Comfortable walking shoes, light woolens (even in summer), rain gear (in monsoon), personal medicines, and all necessary worship items."
       }
-    ],
-    upcomingDepartures: [
-      {
-        date: "May 15, 2025",
-        spotsLeft: 8,
-        price: 14999,
-      },
-      {
-        date: "June 5, 2025",
-        spotsLeft: 12,
-        price: 14999,
-      },
-      {
-        date: "September 10, 2025",
-        spotsLeft: 15,
-        price: 14999,
-      },
-    ],
+    ]
   }
 
   return (
@@ -280,7 +263,7 @@ export default function ManaskhandTemplesPage() {
               <Card className="sticky top-24">
                 <CardHeader>
                   <CardTitle>Book This Pilgrimage</CardTitle>
-                  <CardDescription>Fixed Departures for 2025 Season</CardDescription>
+                  <CardDescription>Contact us for available dates</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center justify-between">
@@ -293,28 +276,9 @@ export default function ManaskhandTemplesPage() {
                     </Badge>
                   </div>
 
-                  <div className="space-y-3">
-                    {destination.upcomingDepartures.map((departure, index) => (
-                      <div key={index} className="flex items-center justify-between p-3 border rounded-lg">
-                        <div>
-                          <div className="flex items-center gap-2">
-                            <Calendar className="h-4 w-4 text-primary" />
-                            <span className="font-medium">{departure.date}</span>
-                          </div>
-                          <p className="text-sm text-muted-foreground">{departure.spotsLeft} spots left</p>
-                        </div>
-                        <Button asChild size="sm">
-                          <Link href="/book/manaskhand">
-                            Book Now
-                          </Link>
-                        </Button>
-                      </div>
-                    ))}
-                  </div>
-
                   <div className="pt-4">
                     <Button asChild className="w-full">
-                      <Link href="/contact">Request Custom Date</Link>
+                      <Link href="/contact">Contact for Dates</Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -570,8 +534,8 @@ export default function ManaskhandTemplesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-              <Link href="/book/manaskhand">
-                  Book Now
+                <Link href="/contact">
+                  Contact for Booking
                 </Link>
               </Button>
               <Button

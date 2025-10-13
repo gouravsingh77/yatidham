@@ -79,10 +79,47 @@ export default function TreksPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            {/* Bankatiya Base Camp Trek */}
+<Card className="overflow-hidden">
+  <div className="relative h-48 w-full">
+    <Image src="/milam/bankatiya.jpg?height=400&width=600" alt="Bankatiya Base Camp" fill className="object-cover" />
+    <Badge className="absolute top-3 left-3 z-10">Easy-Moderate</Badge>
+  </div>
+  <CardHeader>
+    <CardTitle>Bankatiya Base Camp Trek</CardTitle>
+    <CardDescription>A scenic short trek to the beautiful Bankatiya meadows with stunning Himalayan views</CardDescription>
+  </CardHeader>
+  <CardContent>
+    <div className="space-y-3 mb-4">
+      <div className="flex items-center gap-2">
+        <Calendar className="h-4 w-4 text-muted-foreground" />
+        <span className="text-sm">4 Days | </span>
+      </div>
+      <div className="flex items-center gap-2">
+        <MapPin className="h-4 w-4 text-muted-foreground" />
+        <span className="text-sm">Kathgodam → Munsiyari → Bankatiya → Munsiyari → Kathgodam</span>
+      </div>
+      <div className="flex items-center gap-2">
+        <Mountain className="h-4 w-4 text-muted-foreground" />
+        <span className="text-sm">Max Altitude: 3,200m | Difficulty: Easy-Moderate</span>
+      </div>
+    </div>
+    <div className="flex items-center justify-between">
+      <div>
+        <p className="text-sm text-muted-foreground">Starting from</p>
+        <p className="text-2xl font-bold">₹8,999</p>
+      </div>
+      <Button asChild>
+        <Link href="/destinations/bankatiya">View Details</Link>
+      </Button>
+    </div>
+  </CardContent>
+</Card>
             {/* Milam Glacier Trek */}
             <Card className="overflow-hidden">
               <div className="relative h-48 w-full">
-                <Image src="/milam/milamglacier.jpg?height=400&width=600" alt="Milam Glacier" fill className="object-cover" />
+                <Image src="/milam/milam.jpeg?height=400&width=600" alt="Milam Glacier" fill className="object-cover" />
                 <Badge className="absolute top-3 left-3 z-10">Moderate</Badge>
               </div>
               <CardHeader>
@@ -93,7 +130,7 @@ export default function TreksPage() {
                 <div className="space-y-3 mb-4">
                   <div className="flex items-center gap-2">
                     <Calendar className="h-4 w-4 text-muted-foreground" />
-                    <span className="text-sm">5 Days | Next Departure: Aug 5, 2025</span>
+                    <span className="text-sm">5 Days | </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="h-4 w-4 text-muted-foreground" />
@@ -169,7 +206,7 @@ export default function TreksPage() {
                 <div className="space-y-3 mb-4">
                   <div className="flex items-center gap-2">
                     <Calendar className="h-4 w-4 text-muted-foreground" />
-                    <span className="text-sm">6 Days | Next Departure: August 10, 2025</span>
+                    <span className="text-sm">6 Days | </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="h-4 w-4 text-muted-foreground" />

@@ -47,9 +47,7 @@ export function SiteHeader() {
                     <Link href="/destinations" className="text-sm font-medium">
                       Destinations
                     </Link>
-                    <Link href="/packages" className="text-sm font-medium">
-                      Packages
-                    </Link>
+                    
                     <Link href="/testimonials" className="text-sm font-medium">
                       Testimonials
                     </Link>
