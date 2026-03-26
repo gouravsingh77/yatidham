@@ -449,7 +449,7 @@ export default function ServicesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link href="/packages">View Our Packages</Link>
+                <Link href="/destinations">View Our Packages</Link>
               </Button>
               <Button
                 asChild

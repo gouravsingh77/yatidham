@@ -106,7 +106,7 @@ export function SiteFooter() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                <span className="text-muted-foreground">Hospital line Munsyari, Pithoragarh, Uttarakhand</span>
+                <span className="text-muted-foreground">Nanda Devi Road Munsyari, Pithoragarh, Uttarakhand</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary shrink-0" />

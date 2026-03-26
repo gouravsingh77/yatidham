@@ -56,9 +56,7 @@ export default function FeaturedTrek({
           <Button asChild size="lg">
             <Link href={href}>View Details</Link>
           </Button>
-          <Button asChild variant="outline" size="lg">
-            <Link href={`${href}#book`}>Book Now</Link>
-          </Button>
+          
         </div>
       </div>
     </div>

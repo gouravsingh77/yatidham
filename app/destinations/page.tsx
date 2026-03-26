@@ -164,7 +164,7 @@ export default function DestinationsPage() {
                       </div>
                       <div className="flex items-center gap-2">
                         <Calendar className="h-4 w-4 text-muted-foreground" />
-                        <span className="text-sm">Jun-Oct</span>
+                        <span className="text-sm">May-Oct</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <MapPin className="h-4 w-4 text-muted-foreground" />
@@ -209,7 +209,7 @@ export default function DestinationsPage() {
                       </div>
                       <div className="flex items-center gap-2">
                         <Calendar className="h-4 w-4 text-muted-foreground" />
-                        <span className="text-sm">Jun-Sep</span>
+                        <span className="text-sm">April-Sep</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <MapPin className="h-4 w-4 text-muted-foreground" />
@@ -253,7 +253,7 @@ export default function DestinationsPage() {
                       </div>
                       <div className="flex items-center gap-2">
                         <Calendar className="h-4 w-4 text-muted-foreground" />
-                        <span className="text-sm">Jun-Sep</span>
+                        <span className="text-sm">Year-Round</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <MapPin className="h-4 w-4 text-muted-foreground" />
@@ -585,7 +585,7 @@ export default function DestinationsPage() {
                       </div>
                       <div className="flex items-center gap-2">
                         <Calendar className="h-4 w-4 text-muted-foreground" />
-                        <span className="text-sm">Jun-Sep</span>
+                        <span className="text-sm">May-Sep</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <MapPin className="h-4 w-4 text-muted-foreground" />
@@ -680,7 +680,7 @@ export default function DestinationsPage() {
                       </div>
                       <div className="flex items-center gap-2">
                         <Calendar className="h-4 w-4 text-muted-foreground" />
-                        <span className="text-sm">Jun-Sep</span>
+                        <span className="text-sm">April-Sep</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <MapPin className="h-4 w-4 text-muted-foreground" />
@@ -724,7 +724,7 @@ export default function DestinationsPage() {
                       </div>
                       <div className="flex items-center gap-2">
                         <Calendar className="h-4 w-4 text-muted-foreground" />
-                        <span className="text-sm">Jun-Sep</span>
+                        <span className="text-sm">Round-year</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <MapPin className="h-4 w-4 text-muted-foreground" />
@@ -818,7 +818,7 @@ export default function DestinationsPage() {
                       </div>
                       <div className="flex items-center gap-2">
                         <Calendar className="h-4 w-4 text-muted-foreground" />
-                        <span className="text-sm">Jun-Sep</span>
+                        <span className="text-sm">May-Sep</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <MapPin className="h-4 w-4 text-muted-foreground" />
@@ -919,7 +919,7 @@ export default function DestinationsPage() {
                       </div>
                       <div className="flex items-center gap-2">
                         <Calendar className="h-4 w-4 text-muted-foreground" />
-                        <span className="text-sm">Jun-Oct</span>
+                        <span className="text-sm">May-Oct</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <MapPin className="h-4 w-4 text-muted-foreground" />
@@ -1061,7 +1061,7 @@ export default function DestinationsPage() {
                       </div>
                       <div className="flex items-center gap-2">
                         <Calendar className="h-4 w-4 text-muted-foreground" />
-                        <span className="text-sm">Jun-Sep</span>
+                        <span className="text-sm">May-Sep</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <MapPin className="h-4 w-4 text-muted-foreground" />

@@ -170,7 +170,7 @@ export default function Home() {
             duration="6 Days"
             difficulty="Moderate"
             price="24,999"
-            startDate="October, November, 2025"
+            startDate="May, June, 2026"
             href="/destinations/adi-kailash"
             
           />
@@ -234,7 +234,7 @@ export default function Home() {
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-2">
                   <Calendar className="h-5 w-5 text-primary" />
-                  <span className="text-sm font-medium">October, November, 2025</span>
+                  <span className="text-sm font-medium">May, June, 2026</span>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Adi Kailash & Om Parvat</h3>
                 <p className="text-muted-foreground mb-4">6 Days | ₹24,999 per person</p>
@@ -253,7 +253,7 @@ export default function Home() {
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-2">
                   <Calendar className="h-5 w-5 text-primary" />
-                  <span className="text-sm font-medium">October, November, 2025</span>
+                  <span className="text-sm font-medium">May, June, 2026</span>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Bankatiya Base Camp Trek</h3>
                 <p className="text-muted-foreground mb-4">5 Days | ₹8,999 per person</p>
@@ -272,7 +272,7 @@ export default function Home() {
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-2">
                   <Calendar className="h-5 w-5 text-primary" />
-                  <span className="text-sm font-medium">winter's, 2025</span>
+                  <span className="text-sm font-medium">2026</span>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Khaliya Top Trek</h3>
                 <p className="text-muted-foreground mb-4">4 Days | ₹7,999 per person</p>

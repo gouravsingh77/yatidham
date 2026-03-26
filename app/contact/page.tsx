@@ -122,7 +122,7 @@ export default function ContactPage() {
                     <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-medium">Our Address</h3>
-                      <p className="text-muted-foreground">Hospital Line Munsyari Pithoragarh</p>
+                      <p className="text-muted-foreground">Nanda Devi Road Munsyari, Pithoragarh</p>
                     </div>
                   </div>
 

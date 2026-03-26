@@ -188,9 +188,9 @@ export default function AboutPage() {
               </div>
               <div className="p-6 text-center">
                 <h3 className="text-xl font-semibold mb-1">Gourav Singh</h3>
-                <p className="text-primary mb-3">Co-Founder & Operations</p>
+                <p className="text-primary mb-3">Founder & Operations</p>
                 <p className="text-muted-foreground mb-4">
-                  Born and raised in the mountains, Gourav has over a years of experience leading treks and spiritual
+                  Born and raised in the mountains, Gourav has a experience of leading treks and spiritual
                   journeys.
                 </p>
               </div>
