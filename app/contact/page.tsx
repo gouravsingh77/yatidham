@@ -122,7 +122,7 @@ export default function ContactPage() {
                     <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-medium">Our Address</h3>
-                      <p className="text-muted-foreground">Nainital Road Haldwani, Uttarakhand, India</p>
+                      <p className="text-muted-foreground">Hospital Line Munsyari Pithoragarh</p>
                     </div>
                   </div>
 
@@ -196,7 +196,7 @@ export default function ContactPage() {
                 <Image src="/map.png?height=600&width=800" alt="Map Location" fill className="object-cover" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <Button asChild variant="secondary">
-                    <Link href="https://www.google.com/maps/place/Haldwani,+Uttarakhand+263139/@29.2290761,79.5036521,30265m/data=!3m1!1e3!4m6!3m5!1s0x39a09addbd0c86d1:0x6793e360cb3d930f!8m2!3d29.2182644!4d79.5129767!16zL20vMDVwa3Y4?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://https://www.google.com/maps/place/yatidham.in/@30.0654783,80.24156,164m/data=!3m1!1e3!4m6!3m5!1s0x39a6dbb640f1adc9:0xb8c1aeaeb72c2246!8m2!3d30.0656887!4d80.2412708!16s%2Fg%2F11zjcmy4p9?entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
                       <MapPin className="mr-2 h-4 w-4" /> View on Google Maps
                     </Link>
                   </Button>

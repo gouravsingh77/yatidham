@@ -79,8 +79,8 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link href="/destinations/rudranath" className="text-muted-foreground hover:text-primary">
-                  Rudranath Trek
+                <Link href="/destinations/bankatiya" className="text-muted-foreground hover:text-primary">
+                 Bankatiya Base Camp
                 </Link>
               </li>
               <li>
@@ -95,7 +95,7 @@ export function SiteFooter() {
               </li>
               <li>
                 <Link href="/destinations/nanda-devi" className="text-muted-foreground hover:text-primary">
-                  Nanda Devi Base Camp
+                  Nanda Devi East Base Camp
                 </Link>
               </li>
             </ul>
@@ -106,7 +106,7 @@ export function SiteFooter() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                <span className="text-muted-foreground">Nainital Road Haldwani, Uttarakhand, India</span>
+                <span className="text-muted-foreground">Hospital line Munsyari, Pithoragarh, Uttarakhand</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
