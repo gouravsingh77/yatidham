@@ -13,7 +13,7 @@ export default function RanthanKhrakPage() {
     description: "A beautiful Himalayan trek through remote villages and alpine meadows",
     longDescription:
       "The Ranthan Khrak Trek is a hidden gem in the Kumaon Himalayas, offering stunning views of snow-capped peaks and a chance to experience the unique culture of remote mountain villages. Starting from Kathgodam, this 5-day trek takes you through lush forests, traditional Bhotiya villages like Gogina, and high-altitude meadows with panoramic views of Nanda Devi, Trishul, and other Himalayan giants. The trek culminates at the pristine Ranthan Khrak lake, a sacred alpine lake surrounded by towering peaks.",
-    image: "/Himalayas.jpg?height=600&width=1200&text=Ranthan+Khrak",
+    image: "/himalayas.jpg?height=600&width=1200&text=Ranthan+Khrak",
     gallery: [
       "/ranthan/ranthan.jpeg?height=400&width=600&text=Village+Views",
       "/ranthan/ranthan3.jpeg?height=400&width=600&text=Alpine+Meadows",

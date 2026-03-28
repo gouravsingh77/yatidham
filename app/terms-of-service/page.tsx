@@ -1,134 +1,231 @@
 import Link from "next/link"
+import Image from "next/image"
+import { Card, CardContent } from "@/components/ui/card"
 
 export default function TermsOfServicePage() {
   return (
-    <div className="container max-w-4xl py-12 px-4">
-      <h1 className="text-4xl font-bold mb-8">Terms of Service</h1>
+    <div className="flex flex-col min-h-screen">
 
-      <div className="prose dark:prose-invert max-w-none">
-        <p className="lead">
-          Welcome to Yati Dham. By accessing or using our website and services, you agree to be bound by these Terms of
-          Service.
-        </p>
+      {/* 🔥 HERO SECTION */}
+      <section className="relative h-[40vh] w-full">
+        <Image
+          src="/himalayas.jpg"
+          alt="Terms Background"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4">
+            Terms of Service
+          </h1>
+          <p className="text-gray-200 max-w-2xl">
+            Please read these terms carefully before booking your adventure with us.
+          </p>
+        </div>
+      </section>
 
-        <h2>1. Acceptance of Terms</h2>
-        <p>
-          By accessing or using our website, booking a trek or tour, or using any of our services, you agree to be bound
-          by these Terms of Service. If you do not agree to all the terms and conditions, you must not use our services.
-        </p>
+      {/* 📄 CONTENT */}
+      <section className="py-12 px-4">
+        <div className="max-w-4xl mx-auto space-y-8">
 
-        <h2>2. Booking and Payment</h2>
-        <p>
-          When you book a trek or tour with us, you agree to provide accurate and complete information. A booking is
-          confirmed only after we receive the required deposit or full payment, as specified for each trek or tour.
-        </p>
-        <p>Payment terms:</p>
-        <ul>
-          <li>A non-refundable deposit (typically 30% of the total cost) is required to secure your booking</li>
-          <li>Full payment is due 45 days before the departure date</li>
-          <li>For bookings made within 45 days of departure, full payment is required at the time of booking</li>
-          <li>All payments are processed securely through our payment processors</li>
-        </ul>
+          {/* Intro */}
+          <Card>
+            <CardContent className="p-6 space-y-4">
+              <p className="text-muted-foreground">
+                Welcome to <strong>Yati Dham</strong>. By accessing our website, booking any trek, or using our services, 
+                you agree to comply with and be bound by the following Terms of Service.
+              </p>
+              <p className="text-muted-foreground">
+                These terms ensure a safe, transparent, and professional experience for all our travelers.
+              </p>
+            </CardContent>
+          </Card>
 
-        <h2>3. Cancellation and Refund Policy</h2>
-        <p>If you need to cancel your booking, the following cancellation fees apply:</p>
-        <ul>
-          <li>More than 45 days before departure: Loss of deposit</li>
-          <li>30-45 days before departure: 50% of the total cost</li>
-          <li>15-29 days before departure: 75% of the total cost</li>
-          <li>Less than 15 days before departure or no-show: 100% of the total cost</li>
-        </ul>
-        <p>
-          All cancellation requests must be submitted in writing to{" "}
-          <Link href="mailto:yatidham1008@gmail.com" className="text-primary hover:underline">
-            yatidham1008@gmail.com
-          </Link>
-          .
-        </p>
+          {/* Acceptance */}
+          <Card>
+            <CardContent className="p-6 space-y-3">
+              <h2 className="text-2xl font-semibold">1. Acceptance of Terms</h2>
+              <p className="text-muted-foreground">
+                By using our services, you confirm that you have read, understood, and agreed to these terms. 
+                If you do not agree, please do not use our website or services.
+              </p>
+            </CardContent>
+          </Card>
 
-        <h2>4. Changes to Bookings</h2>
-        <p>
-          If you need to change your booking (such as dates or trek/tour), we will try to accommodate your request,
-          subject to availability and the following conditions:
-        </p>
-        <ul>
-          <li>Changes requested more than 45 days before departure: Administrative fee of ₹2,000 per person</li>
-          <li>
-            Changes requested within 45 days of departure: Treated as a cancellation and rebooking, subject to our
-            cancellation policy
-          </li>
-        </ul>
+          {/* Booking */}
+          <Card>
+            <CardContent className="p-6 space-y-4">
+              <h2 className="text-2xl font-semibold">2. Booking & Payments</h2>
 
-        <h2>5. Our Right to Make Changes</h2>
-        <p>
-          We reserve the right to make changes to any trek or tour if necessary due to unforeseen circumstances, safety
-          concerns, or factors beyond our control. If we make a significant change, we will inform you as soon as
-          possible and offer you the option to:
-        </p>
-        <ul>
-          <li>Accept the change</li>
-          <li>Book an alternative trek or tour (subject to availability and price adjustment)</li>
-          <li>Cancel your booking and receive a full refund</li>
-        </ul>
+              <p className="text-muted-foreground">
+                To confirm a booking, accurate personal details and payment are required.
+              </p>
 
-        <h2>6. Health and Fitness</h2>
-        <p>
-          You are responsible for ensuring that you are physically fit and healthy enough to participate in the trek or
-          tour you book. You must disclose any pre-existing medical conditions or health concerns at the time of
-          booking. We reserve the right to refuse participation if we believe your health or fitness level may put you
-          or others at risk.
-        </p>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li>30% non-refundable deposit required to secure booking</li>
+                <li>Full payment must be completed 45 days before departure</li>
+                <li>Bookings within 45 days require full payment</li>
+                <li>Payments are processed via secure third-party gateways</li>
+              </ul>
+            </CardContent>
+          </Card>
 
-        <h2>7. Travel Insurance</h2>
-        <p>
-          We strongly recommend that all participants obtain comprehensive travel insurance that covers trekking
-          activities, emergency evacuation, and trip cancellation. Travel insurance is not included in our trek or tour
-          prices.
-        </p>
+          {/* Cancellation */}
+          <Card>
+            <CardContent className="p-6 space-y-4">
+              <h2 className="text-2xl font-semibold">3. Cancellation & Refund Policy</h2>
 
-        <h2>8. Liability and Responsibility</h2>
-        <p>
-          While we take all reasonable steps to ensure your safety and enjoyment, adventure travel involves inherent
-          risks. By booking with us, you acknowledge and accept these risks. We are not liable for any injury, illness,
-          death, loss, damage, expense, or other claim arising from:
-        </p>
-        <ul>
-          <li>Acts of God or force majeure</li>
-          <li>Civil unrest, strikes, or government actions</li>
-          <li>Actions or omissions of third parties beyond our control</li>
-          <li>Your own actions or omissions</li>
-          <li>Pre-existing medical conditions</li>
-        </ul>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li>45+ days before departure: Deposit loss</li>
+                <li>30–45 days: 50% charge</li>
+                <li>15–29 days: 75% charge</li>
+                <li>Less than 15 days / No-show: 100% charge</li>
+              </ul>
 
-        <h2>9. Intellectual Property</h2>
-        <p>
-          All content on our website, including text, graphics, logos, images, and software, is our property or the
-          property of our licensors and is protected by copyright and other intellectual property laws.
-        </p>
+              <p className="text-muted-foreground">
+                Cancellation requests must be submitted via email:
+              </p>
 
-        <h2>10. Governing Law</h2>
-        <p>
-          These Terms of Service are governed by the laws of India. Any disputes arising from these terms will be
-          subject to the exclusive jurisdiction of the courts in Uttarakhand, India.
-        </p>
+              <Link href="mailto:yatidham1008@gmail.com" className="text-primary hover:underline">
+                📧 yatidham1008@gmail.com
+              </Link>
+            </CardContent>
+          </Card>
 
-        <h2>Contact Us</h2>
-        <p>If you have any questions about these Terms of Service, please contact us at:</p>
-        <p>
-          <strong>Email:</strong>{" "}
-          <Link href="mailto:yatidham1008@gmail.com" className="text-primary hover:underline">
-            yatidham1008@gmail.com
-          </Link>
-          <br />
-          <strong>Phone:</strong>{" "}
-          <Link href="tel:+919259071008" className="text-primary hover:underline">
-          +91 9259071008
-          </Link>
-        </p>
+          {/* Changes */}
+          <Card>
+            <CardContent className="p-6 space-y-3">
+              <h2 className="text-2xl font-semibold">4. Booking Modifications</h2>
 
-        <p className="text-sm text-muted-foreground mt-8">Last Updated: April 7, 2025</p>
-      </div>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li>45+ days before trip: ₹2,000 per person fee</li>
+                <li>Within 45 days: Treated as cancellation + rebooking</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          {/* Company Rights */}
+          <Card>
+            <CardContent className="p-6 space-y-3">
+              <h2 className="text-2xl font-semibold">5. Our Rights & Responsibilities</h2>
+
+              <p className="text-muted-foreground">
+                We may modify itineraries due to weather, safety concerns, or unforeseen conditions.
+              </p>
+
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li>Alternative arrangements will be provided where possible</li>
+                <li>Customers can accept, change, or cancel with refund (if major change)</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          {/* Health */}
+          <Card>
+            <CardContent className="p-6 space-y-3">
+              <h2 className="text-2xl font-semibold">6. Health & Fitness</h2>
+
+              <p className="text-muted-foreground">
+                Himalayan travel requires physical fitness. You must disclose:
+              </p>
+
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li>Medical conditions</li>
+                <li>Physical limitations</li>
+                <li>Past injuries</li>
+              </ul>
+
+              <p className="text-muted-foreground">
+                We reserve the right to deny participation if safety is at risk.
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Insurance */}
+          <Card>
+            <CardContent className="p-6 space-y-3">
+              <h2 className="text-2xl font-semibold">7. Travel Insurance</h2>
+
+              <p className="text-muted-foreground">
+                Travel insurance is highly recommended and should cover:
+              </p>
+
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li>Trekking & adventure activities</li>
+                <li>Medical emergencies</li>
+                <li>Evacuation & cancellations</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          {/* Liability */}
+          <Card>
+            <CardContent className="p-6 space-y-3">
+              <h2 className="text-2xl font-semibold">8. Liability Disclaimer</h2>
+
+              <p className="text-muted-foreground">
+                Adventure travel involves risks. We are not liable for:
+              </p>
+
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li>Natural disasters (landslides, weather)</li>
+                <li>Government restrictions</li>
+                <li>Third-party failures</li>
+                <li>Personal negligence</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          {/* IP */}
+          <Card>
+            <CardContent className="p-6 space-y-3">
+              <h2 className="text-2xl font-semibold">9. Intellectual Property</h2>
+
+              <p className="text-muted-foreground">
+                All website content (images, text, branding) belongs to Yati Dham and cannot be copied without permission.
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Law */}
+          <Card>
+            <CardContent className="p-6 space-y-3">
+              <h2 className="text-2xl font-semibold">10. Governing Law</h2>
+
+              <p className="text-muted-foreground">
+                These terms are governed by the laws of India. Jurisdiction lies in Uttarakhand courts.
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Contact */}
+          <Card>
+            <CardContent className="p-6 text-center space-y-3">
+              <h2 className="text-2xl font-semibold">Contact Us</h2>
+
+              <p className="text-muted-foreground">
+                Have questions? Reach out anytime:
+              </p>
+
+              <Link href="mailto:yatidham1008@gmail.com" className="block text-primary hover:underline">
+                📧 yatidham1008@gmail.com
+              </Link>
+
+              <Link href="tel:+919259071008" className="block text-primary hover:underline">
+                📞 +91 9259071008
+              </Link>
+            </CardContent>
+          </Card>
+
+          {/* Footer */}
+          <p className="text-center text-sm text-muted-foreground">
+            Last Updated: April 7, 2026
+          </p>
+
+        </div>
+      </section>
     </div>
   )
 }
-

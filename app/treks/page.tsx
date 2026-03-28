@@ -94,7 +94,7 @@ export default function TreksPage() {
     <div className="space-y-3 mb-4">
       <div className="flex items-center gap-2">
         <Calendar className="h-4 w-4 text-muted-foreground" />
-        <span className="text-sm">4 Days | </span>
+        <span className="text-sm">5 Days | </span>
       </div>
       <div className="flex items-center gap-2">
         <MapPin className="h-4 w-4 text-muted-foreground" />
@@ -116,42 +116,7 @@ export default function TreksPage() {
     </div>
   </CardContent>
 </Card>
-            {/* Milam Glacier Trek */}
-            <Card className="overflow-hidden">
-              <div className="relative h-48 w-full">
-                <Image src="/milam/milam.jpeg?height=400&width=600" alt="Milam Glacier" fill className="object-cover" />
-                <Badge className="absolute top-3 left-3 z-10">Moderate</Badge>
-              </div>
-              <CardHeader>
-                <CardTitle>Milam Glacier Trek</CardTitle>
-                <CardDescription>Trek through pristine valleys to one of the most beautiful glaciers</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3 mb-4">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="h-4 w-4 text-muted-foreground" />
-                    <span className="text-sm">5 Days | </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="h-4 w-4 text-muted-foreground" />
-                    <span className="text-sm"> Kathgodam → Munsiyari → Milam Glacier → Munsiyari → Kathgodam </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Mountain className="h-4 w-4 text-muted-foreground" />
-                    <span className="text-sm">Max Altitude: 3,870m | Difficulty: Moderate</span>
-                  </div>
-                </div>
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-sm text-muted-foreground">Starting from</p>
-                    <p className="text-2xl font-bold">₹13,999</p>
-                  </div>
-                  <Button asChild>
-                    <Link href="/destinations/milam-glacier">View Details</Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+           
 
             {/* Khaliya Top Trek */}
             <Card className="overflow-hidden">
@@ -267,19 +232,15 @@ export default function TreksPage() {
                   </li>
                   <li className="flex items-center gap-2">
                     <ArrowRight className="h-4 w-4 text-primary" />
-                    <span>Pindari Glacier Trek (7 days)</span>
+                    <span>Bankatiya Base Camp (5 days)</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <ArrowRight className="h-4 w-4 text-primary" />
-                    <span>Tungnath (Chandrashila) Trek (5 days)</span>
+                    <span>Panchachuli Base Camp (5 days)</span>
                   </li>
                 </ul>
               </CardContent>
-             {/* <CardFooter>
-                <Button asChild variant="outline" className="w-full">
-                  <Link href="/treks/easy">View All Easy Treks</Link>
-                </Button>
-              </CardFooter>*/}
+             
             </Card>
 
             <Card className="bg-card">
@@ -302,15 +263,11 @@ export default function TreksPage() {
                   </li>
                   <li className="flex items-center gap-2">
                     <ArrowRight className="h-4 w-4 text-primary" />
-                    <span>Roopkund Trek (7 days)</span>
+                    <span>Pindari Glacier Trek (7 days)</span>
                   </li>
                 </ul>
               </CardContent>
-             {/* <CardFooter>
-                <Button asChild variant="outline" className="w-full">
-                  <Link href="/treks/moderate">View All Moderate Treks</Link>
-                </Button>
-              </CardFooter>*/}
+             
             </Card>
 
             <Card className="bg-card">
@@ -333,7 +290,7 @@ export default function TreksPage() {
                   </li>
                   <li className="flex items-center gap-2">
                     <ArrowRight className="h-4 w-4 text-primary" />
-                    <span>Auden's Col Trek (14 days)</span>
+                    <span>Ralam Glacier Base Camp (7 days)</span>
                   </li>
                 </ul>
               </CardContent>

@@ -488,7 +488,7 @@ export default function RalamGlacierPage() {
               </CardContent>
               <CardFooter>
                 <Button asChild className="w-full">
-                  <Link href="https://wa.me/919259071008?text=I'm%20interested%20in%20Milam%20Glacier%20Trek%20and%20would%20like%20to%20know%20more%20details">Know More</Link>
+                  <Link href="/destinations/milam-glacier">Know More</Link>
                 </Button>
               </CardFooter>
             </Card>

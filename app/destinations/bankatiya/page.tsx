@@ -15,17 +15,17 @@ export default function BankatiyaPage() {
     image: "/himalayas.jpg?height=600&width=1200",
     gallery: [
       "/bankatiya/bankatiya4.jpg?height=400&width=600",
-      "/bankatiya/bankatiya1.jpg?height=400&width=600",
-      "/bankatiya/bankatiya2.jpg?height=400&width=600",
-      "/bankatiya/bankatiya3.jpg?height=400&width=600",
+      "/bankatiya/bankatiya1.jpeg?height=400&width=600",
+      "/bankatiya/bankatiya2.jpeg?height=400&width=600",
+      "/bankatiya/bankatiya3.jpeg?height=400&width=600",
     ],
     category: "Himalayan Expedition",
-    duration: "4 Days",
+    duration: "5 Days",
     difficulty: "Moderate",
     maxAltitude: "4,500m",
     bestSeason: "May to October",
-    startingPoint: "Laspa Village, Munsiyari",
-    endingPoint: "Laspa Village, Munsiyari",
+    startingPoint: "Kathgodam, Haldwani",
+    endingPoint: "Kathgodam, Haldwani",
     price: 8999,
     includes: [
       "Accommodation (tents, homestays & guesthouses)",
@@ -46,30 +46,36 @@ export default function BankatiyaPage() {
       "Anything not mentioned in inclusions",
     ],
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Munsiyari to Laspa Village",
-        description:
-          "Pick-up from Munsiyari and drive to Laspa Village. Explore the village and acclimatize. Overnight stay in Laspa Village.",
-      },
-      {
-        day: "Day 2",
-        title: "Laspa Village to Bankatiya Base Camp",
-        description:
-          "Trek through forests and alpine meadows to reach Bankatiya Base Camp. Set up camp and enjoy sunset views of the Panchachuli range. Overnight at base camp.",
-      },
-      {
-        day: "Day 3",
-        title: "Bankatiya Base Camp Exploration",
-        description:
-          "Explore the area around Bankatiya Base Camp, capture stunning views, and enjoy the serene environment. Optional short treks nearby. Overnight at base camp.",
-      },
-      {
-        day: "Day 4",
-        title: "Return to Laspa Village and Munsiyari",
-        description:
-          "Descend back to Laspa Village and drive to Munsiyari. Drop-off at Munsiyari and conclude the trek with memorable experiences.",
-      },
+       {
+    day: "Day 1",
+    title: "Kathgodam to Munsiyari (Drive)",
+    description:
+      "Pick-up from Kathgodam Railway Station and begin a scenic drive to Munsiyari via Almora, and Birthi Falls. Enjoy beautiful Himalayan landscapes throughout the journey. Overnight stay in Munsiyari.",
+  },
+  {
+    day: "Day 2",
+    title: "Munsiyari to Laspa Village",
+    description:
+      "After breakfast, drive to Laspa Village. Explore the traditional Himalayan lifestyle, interact with locals, and acclimatize. Enjoy stunning views of the Panchachuli peaks. Overnight stay in Laspa (homestay/camp).",
+  },
+  {
+    day: "Day 3",
+    title: "Laspa to Bankatiya Base Camp (Trek)",
+    description:
+      "Begin trek through forests, river streams, and alpine meadows to reach Bankatiya Base Camp. Witness breathtaking views of the Panchachuli range. Set up camp and enjoy sunset. Overnight at base camp.",
+  },
+  {
+    day: "Day 4",
+    title: "Base Camp Exploration & Return to Munsiyari",
+    description:
+      "Enjoy sunrise and explore nearby areas around the base camp. Later trek back to Laspa Village and drive to Munsiyari. Relax after the trek. Overnight stay in Munsiyari.",
+  },
+  {
+    day: "Day 5",
+    title: "Munsiyari to Kathgodam (Departure)",
+    description:
+      "After breakfast, drive back to Kathgodam with unforgettable memories of the Himalayas. Drop-off at Kathgodam Railway Station.",
+  },
     ],
     highlights: [
       "Trek to the Bankatiya Peak Base Camp",
@@ -384,7 +390,164 @@ export default function BankatiyaPage() {
             </div>
           </div>
         </div>
+        
+      </section>
+     {/* Similar Destinations */}
+           <section className="py-16">
+             <div className="container px-4">
+               <div className="text-center mb-12">
+                 <h2 className="text-3xl font-bold mb-4">Similar Destinations</h2>
+                 <p className="text-muted-foreground max-w-2xl mx-auto">Explore other adventure treks in the Himalayas</p>
+               </div>
+     
+               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                 <Card className="overflow-hidden">
+                   <div className="relative h-48 w-full">
+                     <Image
+                       src="/pindari/pindari.jpeg?height=400&width=600&text=Pindari+Glacier"
+                       alt="Pindari Glacier"
+                       fill
+                       className="object-cover"
+                     />
+                     <Badge className="absolute top-3 left-3 z-10">Adventure Trek</Badge>
+                   </div>
+                   <CardHeader>
+                     <CardTitle>Pindari Glacier Trek</CardTitle>
+                     <CardDescription>Trek to one of the most accessible glaciers in the Kumaon Himalayas</CardDescription>
+                   </CardHeader>
+                   <CardContent>
+                     <div className="flex items-center gap-2 mb-4">
+                       <Clock className="h-4 w-4 text-muted-foreground" />
+                       <span className="text-sm">7 Days</span>
+                     </div>
+                     <div className="flex items-center justify-between">
+                       <p className="font-semibold">₹12,999</p>
+                       <Badge variant="outline">Moderate</Badge>
+                     </div>
+                   </CardContent>
+                   <CardFooter>
+                     <Button asChild className="w-full">
+                       <Link href="/destinations/pindari-glacier">View Details</Link>
+                     </Button>
+                   </CardFooter>
+                 </Card>
+     
+                 <Card className="overflow-hidden">
+                   <div className="relative h-48 w-full">
+                     <Image
+                       src="/nanda/nanda.jpeg?height=400&width=600&text=Nanda+Devi+Base+Camp"
+                       alt="Nanda Devi Base Camp"
+                       fill
+                       className="object-cover"
+                     />
+                     <Badge className="absolute top-3 left-3 z-10">Expedition</Badge>
+                   </div>
+                   <CardHeader>
+                     <CardTitle>Nanda Devi Base Camp</CardTitle>
+                     <CardDescription>Trek to the base of India's second-highest peak</CardDescription>
+                   </CardHeader>
+                   <CardContent>
+                     <div className="flex items-center gap-2 mb-4">
+                       <Clock className="h-4 w-4 text-muted-foreground" />
+                       <span className="text-sm">6 Days</span>
+                     </div>
+                     <div className="flex items-center justify-between">
+                       <p className="font-semibold">₹15,999</p>
+                       <Badge variant="outline">Moderate</Badge>
+                     </div>
+                   </CardContent>
+                   <CardFooter>
+                     <Button asChild className="w-full">
+                       <Link href="/destinations/nanda-devi">View Details</Link>
+                     </Button>
+                   </CardFooter>
+                 </Card>
+     
+                 <Card className="overflow-hidden">
+                   <div className="relative h-48 w-full">
+                     <Image
+                       src="/ranthan/ranthan.jpeg?height=400&width=600&text=ranthan+Top"
+                       alt="Ranthan Khrak"
+                       fill
+                       className="object-cover"
+                     />
+                     <Badge className="absolute top-3 left-3 z-10">Easy Trek</Badge>
+                   </div>
+                   <CardHeader>
+                     <CardTitle>Ranthan Khrak Trek</CardTitle>
+                     <CardDescription>
+                     Conquer the high-altitude meadows with breathtaking views of Nanda Devi and Trishul peaks
+                     </CardDescription>
+                   </CardHeader>
+                   <CardContent>
+                     <div className="flex items-center gap-2 mb-4">
+                       <Clock className="h-4 w-4 text-muted-foreground" />
+                       <span className="text-sm">5 Days</span>
+                     </div>
+                     <div className="flex items-center justify-between">
+                       <p className="font-semibold">₹9,999</p>
+                       <Badge variant="outline">Moderate</Badge>
+                     </div>
+                   </CardContent>
+                   <CardFooter>
+                     <Button asChild className="w-full">
+                       <Link href="/destinations/ranthan-khrak">View Details</Link>
+                     </Button>
+                   </CardFooter>
+                 </Card>
+               </div>
+             </div>
+           </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-primary text-primary-foreground">
+        <div className="container px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-4">Ready for Your Himalayan Adventure?</h2>
+            <p className="text-xl mb-8 opacity-90">
+              Book your Khaliya Top trek today and embark on a journey of a lifetime
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg" variant="secondary">
+                <Link href="/contact">
+                  Contact for Booking
+                </Link>
+              </Button>
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-primary"
+              >
+                <Link
+                  href="https://wa.me/919259071008?text=I'm%20interested%20in%20the%20Khaliya%20Top%20trek.%20Can%20you%20provide%20more%20information?"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="mr-2 h-4 w-4"
+                  >
+                    <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+                    <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+                    <path d="M14 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+                    <path d="M9.5 15.5a5 5 0 0 0 5 0" />
+                  </svg>
+                  Contact via WhatsApp
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
-  );
+  )
 }

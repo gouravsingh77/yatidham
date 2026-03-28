@@ -16,7 +16,7 @@ export default function CharDhamYatraPage() {
     image: "/himalayas.jpg?height=600&width=1200&text=Char+Dham+Yatra",
     gallery: [
       "/char/yamnotri.jpeg?height=400&width=600&text=Yamunotri",
-      "/char/gangotri.jpeg?height=400&width=600&text=Gangotri",
+      "/char/Gangotri.jpeg?height=400&width=600&text=Gangotri",
       "/char/kedarnath.jpeg?height=400&width=600&text=Kedarnath",
       "/char/badrinath.jpeg?height=400&width=600&text=Badrinath",
     ],

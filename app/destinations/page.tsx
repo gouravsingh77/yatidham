@@ -108,7 +108,7 @@ export default function DestinationsPage() {
     <div className="grid grid-cols-2 gap-4 mb-4">
       <div className="flex items-center gap-2">
         <Clock className="h-4 w-4 text-muted-foreground" />
-        <span className="text-sm">4 Days</span>
+        <span className="text-sm">5 Days</span>
       </div>
       <div className="flex items-center gap-2">
         <Mountain className="h-4 w-4 text-muted-foreground" />
@@ -194,7 +194,7 @@ export default function DestinationsPage() {
                     <Badge className="absolute top-3 left-3 z-10">Spiritual Journey</Badge>
                   </div>
                   <CardHeader>
-                    <CardTitle>Char Dham Yatra 2025</CardTitle>
+                    <CardTitle>Char Dham Yatra 2026</CardTitle>
                     <CardDescription>View the sacred Yatra in Himalayas</CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -665,7 +665,7 @@ export default function DestinationsPage() {
                     <Badge className="absolute top-3 left-3 z-10">Spiritual Journey</Badge>
                   </div>
                   <CardHeader>
-                    <CardTitle>Char Dham Yatra 2025</CardTitle>
+                    <CardTitle>Char Dham Yatra 2026</CardTitle>
                     <CardDescription>View the sacred Yatra in Himalayas</CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -863,7 +863,7 @@ export default function DestinationsPage() {
     <div className="grid grid-cols-2 gap-4 mb-4">
       <div className="flex items-center gap-2">
         <Clock className="h-4 w-4 text-muted-foreground" />
-        <span className="text-sm">4 Days</span>
+        <span className="text-sm">5 Days</span>
       </div>
       <div className="flex items-center gap-2">
         <Mountain className="h-4 w-4 text-muted-foreground" />

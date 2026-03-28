@@ -47,7 +47,7 @@ export default function ContactPage() {
                 {/* FormSubmit.co configuration */}
                 <input type="hidden" name="_subject" value="New Trek Inquiry from Website" />
                 <input type="hidden" name="_template" value="table" />
-                <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you" />
+                <input type="hidden" name="_next" value="https://yatidham.in/thank-you" />
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="text" name="_honey" style={{display: 'none'}} />
 

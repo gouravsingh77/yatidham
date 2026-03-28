@@ -69,8 +69,8 @@ export default function Home() {
             hidden Himalayan gem of pure beauty and adventure."
               image="/milam/bankatiya.jpg?height=400&width=600"
               category="Adventure Trek"
-              duration="4 Days"
-              difficulty="Moderate"
+              duration="5 Days"
+              difficulty="Easy"
               href="/destinations/bankatiya"
             />
             <DestinationCard
@@ -83,16 +83,7 @@ export default function Home() {
               href="/destinations/adi-kailash"
               
             />
-           { /*
-            <DestinationCard
-              title="Milam Glacier Trek"
-              description="Trek through pristine valleys to one of the most beautiful glaciers"
-              image="/milam/milamglacier.jpg?height=400&width=600"
-              category="Adventure Trek"
-              duration="5 Days"
-              difficulty="Moderate"
-              href="/destinations/milam-glacier"
-            /> */}
+           
             <DestinationCard
               title="Khaliya Top Trek"
               description="A perfect trek for beginners, Khaliya Top offers stunning views of Nanda Devi, Nanda Kot, and Panchachuli peaks from its beautiful meadows."

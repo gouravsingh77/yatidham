@@ -1,109 +1,196 @@
 import Link from "next/link"
+import Image from "next/image"
+import { Card, CardContent } from "@/components/ui/card"
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="container max-w-4xl py-12 px-4">
-      <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
+    <div className="flex flex-col min-h-screen">
 
-      <div className="prose dark:prose-invert max-w-none">
-        <p className="lead">
-          At Yati Dham, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and
-          safeguard your information when you visit our website or use our services.
-        </p>
+      {/* 🔥 HERO SECTION */}
+      <section className="relative h-[40vh] w-full">
+        <Image
+          src="/himalayas.jpg"
+          alt="Privacy Background"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4">
+            Privacy Policy
+          </h1>
+          <p className="text-gray-200 max-w-2xl">
+            Your privacy is important to us. Learn how we collect, use, and protect your personal information.
+          </p>
+        </div>
+      </section>
 
-        <h2>Information We Collect</h2>
-        <p>We may collect personal information that you voluntarily provide to us when you:</p>
-        <ul>
-          <li>Register on our website</li>
-          <li>Book a trek or tour</li>
-          <li>Sign up for our newsletter</li>
-          <li>Contact us through our contact form</li>
-          <li>Participate in promotions or surveys</li>
-        </ul>
+      {/* 📄 CONTENT */}
+      <section className="py-12 px-4">
+        <div className="max-w-4xl mx-auto space-y-8">
 
-        <p>The personal information we collect may include:</p>
-        <ul>
-          <li>Name, email address, phone number, and billing address</li>
-          <li>Payment information (processed securely through our payment processors)</li>
-          <li>Travel preferences and requirements</li>
-          <li>Health information relevant to your trek or tour</li>
-          <li>Demographic information</li>
-        </ul>
+          {/* Intro */}
+          <Card>
+            <CardContent className="p-6 space-y-4">
+              <p className="text-muted-foreground">
+                At <strong>Yati Dham</strong>, we are committed to protecting your privacy and ensuring transparency in how your information is handled. 
+                This Privacy Policy outlines how we collect, use, disclose, and safeguard your data when you visit our website or use our services.
+              </p>
+              <p className="text-muted-foreground">
+                By using our website, you agree to the practices described in this policy.
+              </p>
+            </CardContent>
+          </Card>
 
-        <h2>How We Use Your Information</h2>
-        <p>We may use the information we collect for various purposes, including:</p>
-        <ul>
-          <li>Providing, personalizing, and improving our services</li>
-          <li>Processing your bookings and payments</li>
-          <li>Communicating with you about your bookings, inquiries, and our services</li>
-          <li>Sending you marketing communications (if you've opted in)</li>
-          <li>Analyzing usage patterns to improve our website and services</li>
-          <li>Complying with legal obligations</li>
-        </ul>
+          {/* Information Collection */}
+          <Card>
+            <CardContent className="p-6 space-y-4">
+              <h2 className="text-2xl font-semibold">Information We Collect</h2>
 
-        <h2>Cookies and Tracking Technologies</h2>
-        <p>
-          We use cookies and similar tracking technologies to track activity on our website and hold certain
-          information. Cookies are files with a small amount of data that may include an anonymous unique identifier.
-          You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.
-        </p>
+              <p className="text-muted-foreground">
+                We may collect both personal and non-personal information when you interact with our platform:
+              </p>
 
-        <h2>Third-Party Disclosure</h2>
-        <p>
-          We do not sell, trade, or otherwise transfer your personally identifiable information to outside parties
-          except as described below:
-        </p>
-        <ul>
-          <li>
-            Service providers who assist us in operating our website, conducting our business, or serving our users
-          </li>
-          <li>
-            Partners involved in fulfilling your trek or tour (such as accommodations, transportation providers, and
-            guides)
-          </li>
-          <li>Legal authorities when required by law or to protect our rights</li>
-        </ul>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li><strong>Personal Information:</strong> Name, email address, phone number, and address</li>
+                <li><strong>Booking Information:</strong> Travel preferences, itinerary details, and requirements</li>
+                <li><strong>Payment Information:</strong> Processed securely through third-party payment gateways</li>
+                <li><strong>Health Information:</strong> Relevant medical details required for trekking safety</li>
+                <li><strong>Technical Data:</strong> IP address, browser type, and device information</li>
+              </ul>
+            </CardContent>
+          </Card>
 
-        <h2>Data Security</h2>
-        <p>
-          We implement appropriate technical and organizational measures to maintain the safety of your personal
-          information. However, no method of transmission over the Internet or electronic storage is 100% secure, and we
-          cannot guarantee absolute security.
-        </p>
+          {/* Usage */}
+          <Card>
+            <CardContent className="p-6 space-y-4">
+              <h2 className="text-2xl font-semibold">How We Use Your Information</h2>
 
-        <h2>Your Rights</h2>
-        <p>Depending on your location, you may have certain rights regarding your personal information, including:</p>
-        <ul>
-          <li>The right to access the personal information we hold about you</li>
-          <li>The right to request correction of inaccurate information</li>
-          <li>The right to request deletion of your information</li>
-          <li>The right to withdraw consent</li>
-          <li>The right to lodge a complaint with a supervisory authority</li>
-        </ul>
+              <p className="text-muted-foreground">
+                The information we collect is used to enhance your experience and deliver our services effectively:
+              </p>
 
-        <h2>Changes to This Privacy Policy</h2>
-        <p>
-          We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new
-          Privacy Policy on this page and updating the "Last Updated" date.
-        </p>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li>To process bookings, payments, and confirmations</li>
+                <li>To communicate regarding your trips, inquiries, or updates</li>
+                <li>To personalize your experience and improve our services</li>
+                <li>To send promotional offers (only if you opt-in)</li>
+                <li>To comply with legal obligations and safety requirements</li>
+              </ul>
+            </CardContent>
+          </Card>
 
-        <h2>Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-        <p>
-          <strong>Email:</strong>{" "}
-          <Link href="mailto: yatidham1008@gmail.com" className="text-primary hover:underline">
-            yatidham1008@gmail.com
-          </Link>
-          <br />
-          <strong>Phone:</strong>{" "}
-          <Link href="tel:+919259071008" className="text-primary hover:underline">
-          +91 9259071008
-          </Link>
-        </p>
+          {/* Cookies */}
+          <Card>
+            <CardContent className="p-6 space-y-3">
+              <h2 className="text-2xl font-semibold">Cookies & Tracking Technologies</h2>
 
-        <p className="text-sm text-muted-foreground mt-8">Last Updated: April 7, 2025</p>
-      </div>
+              <p className="text-muted-foreground">
+                We use cookies and similar technologies to analyze website traffic and improve functionality.
+              </p>
+
+              <p className="text-muted-foreground">
+                Cookies help us understand user behavior, remember preferences, and enhance overall user experience. 
+                You can disable cookies through your browser settings at any time.
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Third Party */}
+          <Card>
+            <CardContent className="p-6 space-y-3">
+              <h2 className="text-2xl font-semibold">Third-Party Disclosure</h2>
+
+              <p className="text-muted-foreground">
+                We do not sell or trade your personal information. However, we may share it with trusted partners:
+              </p>
+
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li>Service providers (payment processors, hosting services)</li>
+                <li>Travel partners (guides, hotels, transport providers)</li>
+                <li>Legal authorities when required by law</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          {/* Security */}
+          <Card>
+            <CardContent className="p-6 space-y-3">
+              <h2 className="text-2xl font-semibold">Data Security</h2>
+
+              <p className="text-muted-foreground">
+                We implement appropriate technical and organizational measures to protect your personal data from unauthorized access, misuse, or loss.
+              </p>
+
+              <p className="text-muted-foreground">
+                While we strive to use commercially acceptable means to protect your information, no method of transmission over the internet is completely secure.
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Rights */}
+          <Card>
+            <CardContent className="p-6 space-y-3">
+              <h2 className="text-2xl font-semibold">Your Rights</h2>
+
+              <p className="text-muted-foreground">
+                Depending on your location, you may have the following rights:
+              </p>
+
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li>Access the personal data we hold about you</li>
+                <li>Request corrections to inaccurate information</li>
+                <li>Request deletion of your data</li>
+                <li>Withdraw consent at any time</li>
+                <li>Lodge complaints with a data protection authority</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          {/* Updates */}
+          <Card>
+            <CardContent className="p-6 space-y-3">
+              <h2 className="text-2xl font-semibold">Changes to This Policy</h2>
+
+              <p className="text-muted-foreground">
+                We may update this Privacy Policy periodically. Changes will be posted on this page with an updated revision date.
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Contact */}
+          <Card>
+            <CardContent className="p-6 text-center space-y-3">
+              <h2 className="text-2xl font-semibold">Contact Us</h2>
+
+              <p className="text-muted-foreground">
+                If you have any questions regarding this Privacy Policy, feel free to contact us:
+              </p>
+
+              <Link
+                href="mailto:yatidham1008@gmail.com"
+                className="block text-primary font-medium hover:underline"
+              >
+                📧 yatidham1008@gmail.com
+              </Link>
+
+              <Link
+                href="tel:+919259071008"
+                className="block text-primary font-medium hover:underline"
+              >
+                📞 +91 9259071008
+              </Link>
+            </CardContent>
+          </Card>
+
+          {/* Footer */}
+          <p className="text-center text-sm text-muted-foreground">
+            Last Updated: April 7, 2026
+          </p>
+
+        </div>
+      </section>
     </div>
   )
 }
-
